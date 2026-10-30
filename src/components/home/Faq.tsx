@@ -3,7 +3,7 @@ import SectionTag from "../SectionTag";
 import ScrollWords from "./CustomersWords";
 import FaqAccordion from "./FaqAccordion";
 
-const FAQS = [
+export const FAQS = [
   { q: "Who is EZRecruit for?", a: "Recruitment and staffing agencies in India and the US that run many clients and roles at once." },
   { q: "Can we bring our existing candidates?", a: "Yes. The Import Center brings in your candidate database and CVs with live progress, a report at the end and a rollback option. Your account manager switches it on for you." },
   { q: "How does Nyra use AI, and can we control the cost?", a: "Nyra reads the CVs and job descriptions in your account to score matches and draft text. Admins set a monthly AI budget with allowances per person and per feature, and see usage on a live dashboard." },

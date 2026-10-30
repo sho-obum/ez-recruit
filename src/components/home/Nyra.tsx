@@ -16,7 +16,7 @@ const content = {
   prompt: "Who should I call first for the Java role at Acme?",
   answer: "Nyra found 3 strong matches",
 };
-const CANDIDATES = [
+export const CANDIDATES = [
   { name: "Arjun Mehta", role: "Senior Java developer", initials: "AM", score: 94, reason: "Spring Boot, 6 yrs", note: "Available in 30 days", fit: [96, 92, 88] },
   { name: "Sara Thomas", role: "Backend engineer", initials: "ST", score: 89, reason: "Microservices, AWS", note: "Serving notice, 15 days", fit: [90, 86, 84] },
   { name: "Rohan Iyer", role: "Java developer", initials: "RI", score: 83, reason: "Joins in 15 days", note: "Interviewed last month", fit: [80, 78, 94] },

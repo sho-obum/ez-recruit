@@ -15,6 +15,7 @@ import Posts from "@/components/home/Posts";
 import Faq from "@/components/home/Faq";
 import Contact from "@/components/home/Contact";
 import Footer from "@/components/home/Footer";
+import NyraChat from "@/components/home/NyraChat";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <NyraChat />
       <Reveal />
     </>
   );
