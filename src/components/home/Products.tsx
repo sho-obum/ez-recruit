@@ -4,10 +4,10 @@ import Icon, { type IconName } from "../Icon";
 type Sheet = "jd" | "cv" | "sheet" | "offer";
 type Folder = { title: string; caption: string; href: string; dot: string; ink: string; icon: IconName; sheet: Sheet };
 const FOLDERS: Folder[] = [
-  { title: "Requirements", caption: "Structured briefs", href: "#platform", dot: "bg-blue", ink: "text-blue", icon: "file", sheet: "jd" },
+  { title: "Requirements", caption: "Clear job details", href: "#platform", dot: "bg-blue", ink: "text-blue", icon: "file", sheet: "jd" },
   { title: "Sourcing", caption: "Your own database", href: "#platform", dot: "bg-violet", ink: "text-violet", icon: "database", sheet: "cv" },
-  { title: "Tracker", caption: "Client-ready trackers", href: "#tour", dot: "bg-orange", ink: "text-orange", icon: "table", sheet: "sheet" },
-  { title: "Closures", caption: "Offer to joining", href: "#tour", dot: "bg-green", ink: "text-green", icon: "handshake", sheet: "offer" },
+  { title: "Tracker", caption: "Trackers for clients", href: "#tour", dot: "bg-orange", ink: "text-orange", icon: "table", sheet: "sheet" },
+  { title: "Closures", caption: "From offer to joining", href: "#tour", dot: "bg-green", ink: "text-green", icon: "handshake", sheet: "offer" },
 ];
 const AVATARS = ["bg-[#ffd6a8]", "bg-[#c9dcff]", "bg-[#d8f5c4]"];
 

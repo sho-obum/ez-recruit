@@ -3,8 +3,8 @@ import SectionTag from "../SectionTag";
 import TourNav from "./TourX";
 
 const content = {
-  title: "Every step, mapped out.",
-  sub: "Scroll through the core of EZRecruit, from the first brief to the final report.",
+  title: "See every step.",
+  sub: "Scroll to see the main parts of EZRecruit, from the first job to the final report.",
 };
 
 type Step = { id: string; title: string; icon: IconName; tone: string; lead: string; body: string; Mock: () => React.ReactNode };
@@ -77,7 +77,7 @@ function DashboardMock() {
         </ul>
         <div className="flex flex-col gap-3 pb-6 max-md:hidden">
           <div className="flex flex-col gap-2 rounded-2xl bg-fill-2 p-4">
-            <p className={SMALL}>Feedback owed</p>
+            <p className={SMALL}>Feedback pending</p>
             <div className="flex items-center justify-between">
               <span className="text-[28px] leading-8 font-semibold tracking-[-0.9px]">3</span>
               <span className="flex -space-x-2">
@@ -86,7 +86,7 @@ function DashboardMock() {
             </div>
           </div>
           <div className="flex min-h-0 flex-1 flex-col gap-2 rounded-2xl bg-fill-2 p-4">
-            <p className={SMALL}>Submissions this week</p>
+            <p className={SMALL}>CVs sent this week</p>
             <div className="flex min-h-0 flex-1 items-end gap-1.5">
               {[42, 64, 50, 86, 70, 34, 22].map((h, i) => (
                 <span key={i} className={`flex-1 rounded-t-[3px] ${i === 3 ? "bg-blue" : "bg-[#b3d1ff]"}`} style={{ height: `${h}%` }} />
@@ -255,13 +255,13 @@ const STEPS: Step[] = [
   { id: "tour-dashboards", title: "Dashboards", icon: "layout", tone: "bg-ink", Mock: DashboardMock,
     lead: "A dashboard for every role.", body: "Recruiters, leads, managers, business heads and admins each see what they need." },
   { id: "tour-tracker", title: "Tracker", icon: "table", tone: "bg-blue-deep", Mock: TrackerMock,
-    lead: "Client-ready trackers in a click.", body: "Pick the columns your client wants and share a clean tracker, not a messy spreadsheet." },
+    lead: "Trackers for clients in one click.", body: "Pick the columns your client wants and share a clean tracker, not a messy spreadsheet." },
   { id: "tour-scheduler", title: "Interview scheduler", icon: "calendar", tone: "bg-lime text-ink!", Mock: SchedulerMock,
-    lead: "Interviews without the back and forth.", body: "Schedule rounds, collect feedback and let candidates book their own slot." },
+    lead: "Interviews without endless emails.", body: "Set up rounds, collect feedback and let candidates book their own slot." },
   { id: "tour-goals", title: "Goals and targets", icon: "target", tone: "bg-green", Mock: GoalsMock,
-    lead: "Targets the whole team can see.", body: "Set goals by recruiter or team; they complete themselves when they are met." },
-  { id: "tour-reports", title: "Reports and ROI", icon: "chart", tone: "bg-orange", Mock: ReportsMock,
-    lead: "Know what every role earned.", body: "Client, recruiter and requirement reports, plus revenue by date of joining." },
+    lead: "Targets the whole team can see.", body: "Set goals for each recruiter or team. They are marked done on their own when met." },
+  { id: "tour-reports", title: "Reports and revenue", icon: "chart", tone: "bg-orange", Mock: ReportsMock,
+    lead: "See how much each role earned.", body: "Reports by client, recruiter and job, plus revenue by joining date." },
 ];
 
 export default function Tour() {

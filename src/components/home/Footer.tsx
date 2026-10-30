@@ -65,7 +65,7 @@ export default function Footer() {
             <h3 className="text-[28px] leading-[30.8px] font-semibold tracking-[-0.98px] md:text-[34px] md:leading-[37.4px] md:tracking-[-1.19px]
               lg:text-[40px] lg:leading-[44px] lg:tracking-[-1.4px]">Run your agency<br />from one system.</h3>
             <p className="text-base leading-6 tracking-[-0.08px] text-muted">
-              Briefs, candidates, trackers and closures in one place, with Nyra handling the busywork.
+              Jobs, candidates, trackers and closures in one place. Nyra does the routine work.
             </p>
             <div className="flex flex-col items-start gap-2.5 pt-2 md:flex-row">
               <Button href="#contact">Book a demo</Button>
@@ -81,7 +81,7 @@ export default function Footer() {
               <span aria-hidden="true" className="grid size-11 place-items-center rounded-full bg-ink text-[17px] font-semibold tracking-[-0.5px] text-white">Ez</span>
               <span className="text-[22px] leading-[22px] font-semibold tracking-[-0.88px]">EZRecruit</span>
             </a>
-            <p className="max-w-[241px] text-sm leading-[20.3px] text-muted">The operating system for recruitment agencies.</p>
+            <p className="max-w-[241px] text-sm leading-[20.3px] text-muted">One system to run your recruitment agency.</p>
           </div>
           {COLUMNS.map(c => (
             <nav key={c.title} aria-label={c.title} className="flex flex-col items-start gap-3">

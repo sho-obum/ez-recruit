@@ -4,9 +4,9 @@ import { Badge, RISE, SplitCopy, TRIGGER, from } from "./Nyra";
 const content = {
   tag: "India and US",
   title: "Built for agencies in India and the US.",
-  body: "Run clients in both markets from one system, with the details each one needs.",
+  body: "Work with clients in both countries from one system, with what each one needs.",
   points: [
-    "Hosted on servers in India and the US",
+    "Servers in India and the US",
     "Work authorization and documents for US hiring",
     "Many clients, each with their own contacts, locations and rate cards",
     "Works with Outlook and Google Workspace",
@@ -57,7 +57,7 @@ export default function Regions() {
 
             <span className={`absolute top-6 left-7 z-2 hidden items-center gap-2 rounded-full bg-white px-3.5 py-2.5 text-sm leading-[18.2px] font-medium tracking-[-0.14px]
               shadow-[0_12px_24px_-14px_rgba(20,20,20,0.25)] md:flex lg:-rotate-12 ${RISE}`} style={from("translateY(-90px) rotate(-24deg)", 0.6)}>
-              <Icon name="globe" size={14} className="text-blue" />One system, two markets
+              <Icon name="globe" size={14} className="text-blue" />One system, two countries
             </span>
             <span className={`absolute right-4 bottom-4 z-2 flex items-center gap-2 rounded-full bg-ink px-3.5 py-2.5 text-sm leading-[18.2px] font-medium tracking-[-0.14px] text-white
               shadow-[0_12px_24px_-14px_rgba(20,20,20,0.4)] md:right-10 md:bottom-14 lg:rotate-[10deg] ${RISE}`} style={from("translateY(-90px) rotate(24deg)", 0.75)}>

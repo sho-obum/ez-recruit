@@ -25,9 +25,9 @@ export default function Home() {
       <main>
         <Hero />
         <Statement />
+        <Nyra />
         <Platform />
         <Suite />
-        <Nyra />
         <Rework />
         <Regions />
         <Tour />

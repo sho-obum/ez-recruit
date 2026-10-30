@@ -1,5 +1,6 @@
 import Button from "../Button";
 import Hangers from "./Hangers";
+import { TryNyra } from "./NyraLive";
 import Products from "./Products";
 
 const content = {
@@ -7,7 +8,7 @@ const content = {
   label: "Nyra now scores every candidate",
   lineA: "Run your agency",
   lineB: "from one system",
-  sub: "Take the brief, find and screen candidates, send client-ready trackers and close roles. Nyra, your AI assistant, handles the busywork.",
+  sub: "Add a job, find and check candidates, send updates to clients and fill roles. Nyra, your AI assistant, does the routine work.",
 };
 
 // Splits a line into words for the blur-in; --i staggers them.
@@ -25,7 +26,7 @@ export default function Hero() {
   const titleWords = content.lineA.split(" ").length;
   return (
     <section data-section="Hero"
-      className="relative flex flex-col items-center gap-10 overflow-clip px-5 pt-26 pb-8 md:gap-12 md:px-6 md:pt-30 md:pb-10 lg:gap-6 lg:px-8 lg:pt-32 lg:pb-12">
+      className="relative flex flex-col items-center gap-10 overflow-clip px-5 pt-10 pb-8 md:gap-12 md:px-6 md:pt-14 md:pb-10 lg:gap-6 lg:px-8 lg:pt-16 lg:pb-12">
       <div aria-hidden="true" className="absolute inset-x-0 top-0 z-0 h-[760px] bg-fill mask-[linear-gradient(#000_0%,transparent_100%)]" />
 
       <div className="relative z-1 flex w-full max-w-[1136px] flex-col items-center gap-6 pt-[30px] pb-4 [--app:40px] md:[--app:48px] lg:[--app:60px]">
@@ -54,7 +55,7 @@ export default function Hero() {
 
         <div className="fade-up flex justify-center gap-2.5 pt-4" style={{ "--d": "0.5s" } as React.CSSProperties}>
           <Button href="#contact">Book a demo</Button>
-          <Button href="#tour" variant="light" chevron>See how it works</Button>
+          <TryNyra label="Ask Nyra" />
         </div>
       </div>
 

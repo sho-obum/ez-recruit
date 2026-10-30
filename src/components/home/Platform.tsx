@@ -2,8 +2,8 @@ import Icon from "../Icon";
 import SectionTag from "../SectionTag";
 
 const content = {
-  title: "From brief to closure, in one place",
-  sub: "Take the client's brief, find the right people in your own database, keep clients updated and see every closure, all from one place.",
+  title: "From new job to closure, in one place",
+  sub: "Add the client's job, find the right people in your own database, keep clients updated and see every closure in one place.",
 };
 
 const CANDIDATES: [string, number][] = [
@@ -101,7 +101,7 @@ function Closures() {
 }
 
 const TILES = [
-  { kicker: "Capture every", label: "Brief", visual: <Brief /> },
+  { kicker: "Save every", label: "Requirement", visual: <Brief /> },
   { kicker: "Search your own", label: "Database", visual: <Database />, mask: true },
   { kicker: "Send clients a", label: "Tracker", visual: <Tracker /> },
   { kicker: "Track your", label: "Closures", visual: <Closures /> },
@@ -112,7 +112,7 @@ export default function Platform() {
     <section data-section="Features" id="platform"
       className="flex flex-col items-center gap-10 overflow-clip px-5 py-18 md:gap-12 md:px-6 md:py-24 lg:gap-16 lg:px-8 lg:py-32">
       <div className="flex max-w-[760px] flex-col lg:max-w-[880px] items-center gap-4 text-center">
-        <SectionTag n={1} label="Platform" />
+        <SectionTag n={2} label="Platform" />
         <h2 data-reveal className="text-[34px] leading-[35.7px] font-semibold tracking-[-1.36px] md:text-[44px] md:leading-[46.2px] md:tracking-[-1.76px]
           lg:text-[56px] lg:leading-[58.8px] lg:tracking-[-2.24px]">{content.title}</h2>
         <p data-reveal style={{ "--d": "0.1s" } as React.CSSProperties}

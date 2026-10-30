@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ezrecruit.ai"),
   title: "EZRecruit | Recruitment Agency Operating System & ATS",
   description:
-    "EZRecruit is the ATS and operating system for recruitment and staffing agencies: structured briefs, your own candidate database, client-ready trackers, closures and Nyra, your AI assistant.",
+    "EZRecruit is the ATS for recruitment and staffing agencies. Add jobs, keep your own candidate database, share trackers with clients, track closures and get help from Nyra, your AI assistant.",
   alternates: { canonical: "/" },
   openGraph: { type: "website", siteName: "EZRecruit", url: "/" },
 };

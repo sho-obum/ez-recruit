@@ -6,12 +6,12 @@ import Icon, { type IconName } from "../Icon";
 // Position as % of the hero content width and px from its top, per breakpoint (desktop, tablet, phone).
 type Spot = { icon: IconName; tone: string; d: [number, number]; t: [number, number]; p: [number, number] };
 const SPOTS: Spot[] = [
-  { icon: "briefcase", tone: "bg-ink", d: [20.6, 108], t: [12.5, 72], p: [31.4, 13] },
-  { icon: "trending", tone: "bg-green", d: [74.0, 112], t: [82.4, 72], p: [57.7, 14] },
-  { icon: "users", tone: "bg-orange", d: [8.5, 280], t: [0.9, 306], p: [2.6, 39] },
-  { icon: "calendar", tone: "bg-blue-deep", d: [85.1, 270], t: [93.7, 306], p: [86.6, 40] },
-  { icon: "search", tone: "bg-green", d: [17.0, 459], t: [3.4, 482], p: [16.3, 64] },
-  { icon: "check", tone: "bg-lime text-ink", d: [77.0, 458], t: [91.0, 482], p: [74.3, 63] },
+  { icon: "briefcase", tone: "bg-ink", d: [20.6, -26], t: [12.5, -50], p: [31.4, 13] },
+  { icon: "trending", tone: "bg-green", d: [74.0, -22], t: [82.4, -50], p: [57.7, 14] },
+  { icon: "users", tone: "bg-orange", d: [8.5, 146], t: [0.9, 184], p: [2.6, 39] },
+  { icon: "calendar", tone: "bg-blue-deep", d: [85.1, 136], t: [93.7, 184], p: [86.6, 40] },
+  { icon: "search", tone: "bg-green", d: [17.0, 325], t: [3.4, 360], p: [16.3, 64] },
+  { icon: "check", tone: "bg-lime text-ink", d: [77.0, 324], t: [91.0, 360], p: [74.3, 63] },
 ];
 
 const TILE = `absolute inset-0 grid origin-top cursor-grab touch-none select-none place-items-center text-white
@@ -44,9 +44,8 @@ export default function Hangers() {
   useEffect(() => root.current ? hang(root.current.closest("section")!) : undefined, []);
   return (
     <>
-      <div ref={root} className="h-[calc(var(--app)+36px)] -translate-y-2.5 md:h-[calc(var(--app)+50px)]">
-        <Hanger id="rope0" icon="sparkle" tone="bg-violet" className="relative" />
-      </div>
+      {/* Phone keeps a band above the badge for its top icons; wider screens let the content sit higher. */}
+      <div ref={root} aria-hidden="true" className="h-[calc(var(--app)+36px)] md:-mb-6 md:h-0" />
       {SPOTS.map((s, n) => (
         <Hanger key={n} id={`rope${n + 1}`} icon={s.icon} tone={s.tone}
           className="absolute left-(--px) top-(--py) md:left-(--tx) md:top-(--ty) lg:left-(--dx) lg:top-(--dy)"

@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 const POINTS = [
   { label: "A 30-minute walkthrough" },
-  { label: "Help moving your candidates in" },
+  { label: "Help bringing your candidates in" },
   { label: "support@ezrecruit.ai", href: "mailto:support@ezrecruit.ai" },
 ];
 
@@ -23,7 +23,7 @@ export default function Contact() {
           </h2>
           <p data-reveal className="text-[17px] leading-[24.65px] tracking-[-0.17px] text-white/60
             md:text-lg md:leading-[26.1px] md:tracking-[-0.18px] lg:text-xl lg:leading-[29px] lg:tracking-[-0.2px]">
-            Tell us about your agency and we will show you EZRecruit on your own roles.
+            Tell us about your agency. We will show you EZRecruit using your own jobs.
           </p>
           <ul data-reveal style={{ "--d": "0.1s" } as React.CSSProperties} className="flex flex-col gap-3">
             {POINTS.map(p => (

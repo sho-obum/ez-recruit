@@ -2,8 +2,8 @@ import Icon, { type IconName } from "../Icon";
 import SectionTag from "../SectionTag";
 
 const content = {
-  title: "Everything an agency runs on.",
-  side: "Start with requirements and candidates and add the rest as you grow. Everything shares one database, one login and one pipeline.",
+  title: "Everything your agency needs.",
+  side: "Start with jobs and candidates, and add more as you grow. It all uses one database, one login and one pipeline.",
 };
 
 const MINI = "rounded-3xl bg-white shadow-[0_16px_32px_-24px_rgba(20,20,20,0.22)]";
@@ -21,7 +21,7 @@ function Requirements() {
         </div>
         <p className="rounded-xl bg-fill-2 px-3 py-2 text-[13px] leading-[18px] text-ink-2">Need a senior Java dev, Spring Boot, 5+ years, can join in 30 days.</p>
         <span className="flex items-center justify-center gap-2 rounded-xl bg-blue px-[18px] py-3 text-base leading-[19.2px] font-medium tracking-[-0.16px] text-white">
-          <Icon name="sparkle" size={15} />Generate with Nyra
+          <Icon name="sparkle" size={15} />Write with Nyra
         </span>
       </div>
       <div className={`absolute inset-x-5 top-[178px] flex flex-col gap-3 p-4 md:inset-x-auto md:top-[68px] md:right-7 md:w-[416px] ${MINI}`}>
@@ -176,14 +176,14 @@ function Nyra() {
 }
 
 const TILES = [
-  { title: "Requirements", text: "Paste the client's brief and Nyra drafts the job description and screening questions.", stage: <Requirements />,
+  { title: "Requirements", text: "Paste the client's job details. Nyra writes the job description and screening questions.", stage: <Requirements />,
     span: "h-[400px] md:col-span-2 md:h-auto" },
-  { title: "Candidates", text: "Every CV read on upload, even in bulk. Duplicates are caught by email and phone.", stage: <Candidates />,
+  { title: "Candidates", text: "Upload CVs, even in bulk, and each one is read. Repeats are found by email and phone.", stage: <Candidates />,
     span: "h-[620px] md:row-span-2 md:h-auto lg:col-start-3" },
-  { title: "Interviews", text: "Schedule interviews, and let candidates pick their own slot.", stage: <Interviews />, span: "h-[320px] md:h-auto" },
-  { title: "Closures", text: "Track offers and joining dates, and see revenue by date of joining.", stage: <Closures />, span: "h-[340px] md:h-auto" },
-  { title: "Goals", text: "Set team targets that complete themselves when they are met.", stage: <Goals />, span: "h-[320px] md:col-span-2 md:h-auto lg:col-span-1" },
-  { title: "Nyra AI", text: "Ask in plain words and get the right candidates, with reasons.", stage: <Nyra />, span: "h-[360px] md:col-span-2 md:h-auto" },
+  { title: "Interviews", text: "Set up interviews and let candidates pick their own slot.", stage: <Interviews />, span: "h-[320px] md:h-auto" },
+  { title: "Closures", text: "Track offers and joining dates. See revenue by joining date.", stage: <Closures />, span: "h-[340px] md:h-auto" },
+  { title: "Goals", text: "Set team targets. They are marked done on their own when met.", stage: <Goals />, span: "h-[320px] md:col-span-2 md:h-auto lg:col-span-1" },
+  { title: "Nyra AI", text: "Ask in simple words. Get the right candidates and the reasons why.", stage: <Nyra />, span: "h-[360px] md:col-span-2 md:h-auto" },
 ];
 
 export default function Suite() {
@@ -192,7 +192,7 @@ export default function Suite() {
       <div className="flex w-full max-w-[1136px] flex-col gap-12">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:gap-12">
           <div className="flex flex-col gap-6 lg:flex-1">
-            <SectionTag n={2} label="Products" />
+            <SectionTag n={3} label="Products" />
             <h2 data-reveal className="text-[34px] leading-[35.7px] font-semibold tracking-[-1.36px] md:text-[44px] md:leading-[46.2px] md:tracking-[-1.76px]
               lg:text-[56px] lg:leading-[58.8px] lg:tracking-[-2.24px]">{content.title}</h2>
           </div>

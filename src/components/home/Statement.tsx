@@ -4,7 +4,7 @@ import StatementX from "./StatementX";
 type Chip = { icon: IconName; tone: string };
 // "|" marks where an icon chip sits in the sentence.
 const content = {
-  sentence: "EZRecruit | is the operating system where agency teams brief, source, screen, | submit and close, | all in one calm place.",
+  sentence: "EZRecruit | is where agency teams add jobs, find and check candidates, | share them with clients and fill roles, | all in one calm place.",
   chips: [
     { icon: "briefcase", tone: "bg-[linear-gradient(#2b7fff,#0052ff)] text-white" },
     { icon: "check", tone: "bg-[linear-gradient(#e0ff5c,#b8e600)] text-ink" },

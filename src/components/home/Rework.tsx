@@ -2,15 +2,15 @@ import Icon from "../Icon";
 import { Badge, RISE, SplitCopy, TRIGGER, from } from "./Nyra";
 
 const content = {
-  tag: "Less rework",
+  tag: "Less repeat work",
   title: "Stop doing the same work twice.",
-  body: "Every search, CV and submission is saved and reused, so the next role starts where the last one ended.",
-  points: ["Bulk CV import, read in moments", "A new CV replaces the old one everywhere", "Email typos caught as you type"],
+  body: "Every search, CV and candidate you send is saved, so you can use it again on the next role.",
+  points: ["Upload many CVs, read in moments", "A new CV replaces the old one everywhere", "Email mistakes found as you type"],
   link: { label: "Read The Glove story", href: "https://ezrecruit.ai/blog/case-study-the-glove-how-the-glove-got-an-hour-back-per-recruiter-every-day/" },
 };
 const STATS = [
-  { value: "1 hr", label: "back per recruiter, every day, at The Glove" },
-  { value: "1 record", label: "per candidate: email and phone are checked before anyone is added" },
+  { value: "1 hr", label: "saved per recruiter, every day, at The Glove" },
+  { value: "1 record", label: "per candidate. We check email and phone before adding anyone." },
 ];
 // The mock "Add candidate" form: email and phone light up as matches, then the duplicate warning.
 const FIELDS = [

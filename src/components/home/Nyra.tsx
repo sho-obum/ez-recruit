@@ -1,16 +1,17 @@
 import Button from "../Button";
 import Icon from "../Icon";
 import SectionTag from "../SectionTag";
+import { TryNyra, TypeOn } from "./NyraLive";
 
 const content = {
   tag: "Nyra AI",
-  title: "Give every recruiter an AI assistant.",
-  body: "Nyra reads every CV and every job description in your account, so your team spends time on people, not paperwork.",
+  title: "Meet Nyra, your team's AI assistant.",
+  body: "Nyra reads every CV and every job in your account. Just ask, and she shows you the right people.",
   points: [
-    "A match score out of 100 on every recommended candidate, with the reasons",
-    "A polished job description from the client's brief",
-    "Screening questions drafted from the role",
-    "A daily briefing: strong matches, feedback owed, today's interviews",
+    "Gives each candidate a score out of 100, and says why",
+    "Writes the job description from your client's brief",
+    "Drafts screening questions for each job",
+    "Sends a daily update: best matches, feedback due, today's interviews",
   ],
   link: { label: "See Nyra in a demo", href: "#contact" },
   prompt: "Who should I call first for the Java role at Acme?",
@@ -78,19 +79,22 @@ export default function Nyra() {
   return (
     <section data-section="Split AI" id="nyra" className="flex flex-col items-center overflow-clip px-5 py-18 md:px-6 md:py-24 lg:px-8 lg:py-32">
       <div className="flex w-full max-w-[1136px] flex-col gap-8 md:gap-10 lg:flex-row lg:items-center lg:gap-16">
-        <SplitCopy n={3} {...content} />
+        <SplitCopy n={1} {...content}>
+          <div className={RISE} style={from("translateY(14px)", 0.6)}><TryNyra /></div>
+        </SplitCopy>
 
         <div data-reveal style={TRIGGER} className="relative h-[460px] w-full md:h-[520px] lg:h-[560px] lg:w-[606px] lg:flex-none">
-          <div className={`absolute inset-0 overflow-clip rounded-[40px] bg-fill-2 ${RISE}`} style={from("translateY(40px) scale(0.97)")}>
-            <p className={`absolute top-5 right-5 w-[270px] rounded-3xl bg-fill px-[22px] py-[18px] text-[17px] leading-[24.65px] tracking-[-0.17px]
+          <div className={`absolute inset-0 overflow-clip rounded-[40px] bg-[linear-gradient(160deg,#e3edff_0%,#f4f7fd_45%,#f7f7f7_100%)] ${RISE}`} style={from("translateY(40px) scale(0.97)")}>
+            <span aria-hidden="true" className="absolute -top-24 -left-20 size-72 animate-[pulse_5s_ease-in-out_infinite] rounded-full bg-blue/20 blur-3xl" />
+            <p className={`absolute top-5 right-5 w-[270px] rounded-3xl rounded-br-md bg-ink px-[22px] py-[18px] text-[17px] leading-[24.65px] tracking-[-0.17px] text-white
               md:top-10 md:right-10 md:w-[360px] md:text-lg md:leading-[26.1px] md:tracking-[-0.18px] lg:text-xl lg:leading-[29px] lg:tracking-[-0.2px] ${RISE}`}
               style={from("translateY(20px) scale(0.96)", 0.25)}>
-              {content.prompt}
+              <TypeOn text={content.prompt} delay={900} />
             </p>
 
             <p className={`absolute top-[150px] left-5 flex items-center gap-2 text-[17px] leading-[24.65px] tracking-[-0.17px]
               md:top-[192px] md:left-10 md:text-lg md:leading-[26.1px] md:tracking-[-0.18px] lg:text-xl lg:leading-[29px] lg:tracking-[-0.2px] ${RISE}`}
-              style={from("translateY(10px)", 0.45)}>
+              style={from("translateY(10px)", 2.3)}>
               <Icon name="sparkle" size={18} className="text-blue" />
               {content.answer}
             </p>
@@ -98,7 +102,7 @@ export default function Nyra() {
             <ul className="absolute top-[190px] left-5 flex gap-3.5 md:top-[236px] md:left-10">
               {CANDIDATES.map((c, i) => (
                 <li key={c.name} className={`flex h-[340px] w-[224px] flex-none flex-col gap-3.5 rounded-3xl bg-white p-[18px] shadow-[0_18px_32px_-20px_rgba(20,20,20,0.25)] ${RISE}`}
-                  style={from("translateX(70px)", 0.55 + i * 0.1)}>
+                  style={from("translateX(70px)", 2.4 + i * 0.12)}>
                   <div className="flex items-center gap-2.5">
                     <Badge className="size-9 bg-ink text-[13px] font-medium tracking-[-0.13px]">{c.initials}</Badge>
                     <div className="flex flex-col gap-px">
@@ -117,7 +121,7 @@ export default function Nyra() {
                         <span className="flex justify-between text-xs leading-[15.6px] font-medium text-muted"><span>{f}</span><span className="text-ink">{c.fit[n]}</span></span>
                         <span className="block h-1.5 overflow-clip rounded-full bg-fill">
                           <span className={`block h-full origin-left rounded-full ${n === 0 ? "bg-blue" : "bg-[#b3d1ff]"} ${RISE}`}
-                            style={{ ...from("scaleX(0)", 0.9 + i * 0.1 + n * 0.08), width: `${c.fit[n]}%` }} />
+                            style={{ ...from("scaleX(0)", 2.8 + i * 0.12 + n * 0.08), width: `${c.fit[n]}%` }} />
                         </span>
                       </div>
                     ))}

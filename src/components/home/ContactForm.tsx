@@ -62,8 +62,8 @@ export default function ContactForm() {
     return (
       <div role="status" className="flex min-h-[300px] flex-col items-center justify-center gap-4 text-center">
         <span className="grid size-12 place-items-center rounded-full bg-lime text-ink"><Icon name="tick" size={22} stroke={2.2} /></span>
-        <p className="text-xl leading-[25px] font-medium tracking-[-0.4px]">Thanks, we will be in touch shortly.</p>
-        <p className="text-sm leading-[20.3px] text-muted">Need us sooner? Write to <a href={`mailto:${SUPPORT}`} className="text-ink underline decoration-line underline-offset-2">{SUPPORT}</a></p>
+        <p className="text-xl leading-[25px] font-medium tracking-[-0.4px]">Thanks, we will get back to you soon.</p>
+        <p className="text-sm leading-[20.3px] text-muted">Need help sooner? Email <a href={`mailto:${SUPPORT}`} className="text-ink underline decoration-line underline-offset-2">{SUPPORT}</a></p>
       </div>
     );
   }
@@ -89,7 +89,7 @@ export default function ContactForm() {
 
       {state === "error" ? (
         <div role="alert" className="flex flex-col items-center gap-3 rounded-2xl bg-fill-2 p-4 text-center">
-          <p className="text-sm leading-[20.3px] text-muted">We could not send your request just now. Email us and we will reply from there.</p>
+          <p className="text-sm leading-[20.3px] text-muted">Your request did not go through. Email us and we will reply there.</p>
           <a href={`mailto:${SUPPORT}?subject=Demo%20request`} className={DARK}><Roll label="Email us instead" /></a>
           <button type="submit" className="cursor-pointer text-xs leading-[15.6px] font-medium text-muted underline decoration-line underline-offset-2 hover:text-ink">Try again</button>
         </div>

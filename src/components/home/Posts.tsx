@@ -6,21 +6,21 @@ import ScrollWords from "./CustomersWords";
 const POSTS = [
   {
     title: "Best ATS for recruitment agencies in 2026: an honest comparison",
-    excerpt: "What an agency should look for in an ATS, and how the main options stack up against each other.",
+    excerpt: "What to look for in an ATS, and how the main options compare.",
     href: "/blog/best-ats-for-recruitment-agencies-2026-honest-comparison/",
     topic: "ATS guide", kind: "Comparison", cover: "Best ATS for agencies, 2026",
     tone: "bg-blue text-white", ring: "border-white/25",
   },
   {
     title: "Case study: how The Glove got an hour back per recruiter, every day",
-    excerpt: "How one agency moved its briefs, candidates and trackers into EZRecruit and won back recruiter time.",
+    excerpt: "How one agency moved its jobs, candidates and trackers into EZRecruit and saved recruiter time.",
     href: "/blog/case-study-the-glove-how-the-glove-got-an-hour-back-per-recruiter-every-day/",
     topic: "Customer story", kind: "Case study", cover: "One hour back, every day",
     tone: "bg-violet text-white", ring: "border-white/25",
   },
   {
     title: "Where recruiter time really goes, and why most agencies don't see it",
-    excerpt: "The small admin tasks that quietly fill a recruiter's week, and how to spot them in your own team.",
+    excerpt: "The small tasks that fill a recruiter's week, and how to find them in your team.",
     href: "/blog/where-recruiter-time-is-really-going-and-why-most-recruitment-agencies-don-t-see-it/",
     topic: "Recruiter time", kind: "Insight", cover: "Where the hours go",
     tone: "bg-lime text-ink", ring: "border-ink/15",
@@ -42,7 +42,7 @@ export default function Posts() {
           <div data-reveal className="flex flex-1 flex-col items-start gap-4 lg:items-end" style={{ "--d": "0.15s" } as React.CSSProperties}>
             <p className="max-w-[400px] text-[17px] leading-[24.65px] tracking-[-0.17px] text-muted
               md:text-lg md:leading-[26.1px] md:tracking-[-0.18px] lg:text-right lg:text-xl lg:leading-[29px] lg:tracking-[-0.2px]">
-              Honest guides and real stories for recruitment agency teams.
+              Honest guides and real stories for recruitment agencies.
             </p>
             <Button href="/blog/" variant="light" chevron>View all posts</Button>
           </div>

@@ -8,15 +8,15 @@ const CASE_STUDY = "https://ezrecruit.ai/blog/case-study-the-glove-how-the-glove
 type Quote = { quote: string; name: string; role?: string; company?: string; tone: string; link?: string; placeholder?: boolean };
 const QUOTES: Quote[] = [
   { quote: "We got an hour back per recruiter, every day.", name: "The Glove", tone: "bg-blue text-white", link: CASE_STUDY },
-  { quote: "Client trackers used to eat our Friday afternoons. Now they go out the same day.", name: "Priya Nair", role: "Founder", company: "Northbridge Talent", tone: "bg-[#ffd6a8]", placeholder: true },
-  { quote: "Every brief arrives in the same shape, so new recruiters pick up roles on day one.", name: "Daniel Ross", role: "Head of Delivery", company: "Keystone Staffing", tone: "bg-[#c9dcff]", placeholder: true },
+  { quote: "Client trackers used to take our whole Friday afternoon. Now we send them the same day.", name: "Priya Nair", role: "Founder", company: "Northbridge Talent", tone: "bg-[#ffd6a8]", placeholder: true },
+  { quote: "Every job comes in the same format, so new recruiters can start on day one.", name: "Daniel Ross", role: "Head of Delivery", company: "Keystone Staffing", tone: "bg-[#c9dcff]", placeholder: true },
   { quote: "Nyra's match scores mean we call the right five people first.", name: "Ananya Rao", role: "Team Lead", company: "Brightpath Search", tone: "bg-[#d8f5c4]", placeholder: true },
-  { quote: "Our whole candidate history finally lives in one place we can search.", name: "Marcus Hill", role: "Director", company: "Harbor & Vale", tone: "bg-[#e4e1ff]", placeholder: true },
-  { quote: "Candidates book their own interview slots, so the back and forth is gone.", name: "Sara Mehta", role: "Recruiter", company: "Meridian People", tone: "bg-[#ffe1cf]", placeholder: true },
+  { quote: "All our candidates are finally in one place we can search.", name: "Marcus Hill", role: "Director", company: "Harbor & Vale", tone: "bg-[#e4e1ff]", placeholder: true },
+  { quote: "Candidates book their own interview slots, so no more long email chains.", name: "Sara Mehta", role: "Recruiter", company: "Meridian People", tone: "bg-[#ffe1cf]", placeholder: true },
   { quote: "We see every open role across every client on one screen.", name: "Tom Becker", role: "Co-founder", company: "Summit Hire", tone: "bg-[#c9dcff]", placeholder: true },
-  { quote: "Moving our old database in took an afternoon, with a report at the end.", name: "Neha Kapoor", role: "Operations Lead", company: "Lattice Talent", tone: "bg-[#d8f5c4]", placeholder: true },
-  { quote: "Offers and joinings are tracked properly now, so nothing slips at the end.", name: "James Carter", role: "Account Manager", company: "Copperleaf Staffing", tone: "bg-[#ffd6a8]", placeholder: true },
-  { quote: "The team stopped keeping side spreadsheets within a month.", name: "Rohan Desai", role: "Founder", company: "Bluewater Recruiters", tone: "bg-[#e4e1ff]", placeholder: true },
+  { quote: "Bringing in our old database took one afternoon, with a report at the end.", name: "Neha Kapoor", role: "Operations Lead", company: "Lattice Talent", tone: "bg-[#d8f5c4]", placeholder: true },
+  { quote: "We now track offers and joinings properly, so nothing gets missed.", name: "James Carter", role: "Account Manager", company: "Copperleaf Staffing", tone: "bg-[#ffd6a8]", placeholder: true },
+  { quote: "Within a month, the team stopped using extra spreadsheets.", name: "Rohan Desai", role: "Founder", company: "Bluewater Recruiters", tone: "bg-[#e4e1ff]", placeholder: true },
 ];
 const ROWS = [QUOTES.slice(0, 5), QUOTES.slice(5)];
 
@@ -75,7 +75,7 @@ export default function Customers() {
         <SectionTag n={8} label="Customers" />
         <h2 className="max-w-[760px] text-center lg:max-w-[620px] text-[34px] leading-[35.7px] font-semibold tracking-[-1.36px]
           md:text-[44px] md:leading-[46.2px] md:tracking-[-1.76px] lg:text-[56px] lg:leading-[58.8px] lg:tracking-[-2.24px]">
-          <ScrollWords text="Agencies that run on EZRecruit." />
+          <ScrollWords text="Agencies that use EZRecruit." />
         </h2>
         <a href={CASE_STUDY} data-reveal style={{ "--d": "0.2s" } as React.CSSProperties}
           className="inline-flex items-center gap-1 text-sm leading-[18.2px] font-medium tracking-[-0.14px] text-muted transition-colors hover:text-ink">

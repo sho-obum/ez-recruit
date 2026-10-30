@@ -4,8 +4,8 @@ import RolesStage from "./RolesX";
 import { APP_ICON } from "./Tour";
 
 const content = {
-  title: "One workspace, a view for every role.",
-  body: "Recruiters, leads, managers, business heads and admins work in the same place, and each sees the work that matters to them.",
+  title: "One place to work, a view for every role.",
+  body: "Recruiters, leads, managers, business heads and admins work in the same place. Each one sees the work that matters to them.",
 };
 
 type Item = { label: string; icon: IconName; active?: boolean; badge?: string };
@@ -17,7 +17,7 @@ const MENU: { group: string; items: Item[] }[] = [
 
 const STATS: { label: string; value: string; icon: IconName; tone: string }[] = [
   { label: "Interviews today", value: "6", icon: "calendar", tone: "bg-blue-deep" },
-  { label: "Feedback owed", value: "3", icon: "message", tone: "bg-orange" },
+  { label: "Feedback pending", value: "3", icon: "message", tone: "bg-orange" },
   { label: "Strong matches", value: "12", icon: "sparkle", tone: "bg-lime text-ink!" },
 ];
 
@@ -84,7 +84,7 @@ function Panel() {
           <span className="rounded-full bg-white px-3 py-[7px] text-xs leading-[15.6px] font-medium text-ink">New requirement</span>
         </div>
         <div className="flex flex-col gap-3.5">
-          <div className="flex items-end gap-2.5"><h4 className={H4}>Today</h4><span className={MUTED}>Your pipeline at a glance</span></div>
+          <div className="flex items-end gap-2.5"><h4 className={H4}>Today</h4><span className={MUTED}>Your work at a glance</span></div>
           <div className="flex gap-3">
             {STATS.map((s, i) => (
               <div key={s.label} data-reveal style={{ "--d": `${i * 0.08}s` } as React.CSSProperties}
