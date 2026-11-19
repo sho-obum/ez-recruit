@@ -2,22 +2,12 @@ import TextCta from "../TextCta";
 import TalkButton from "../TalkButton";
 import Icon from "../Icon";
 import NyraDemo from "./NyraDemo";
-import NyraMark from "./NyraMark";
-import { TryNyra } from "./NyraLive";
-import { AnimatedShinyText } from "../ui21/animated-shiny-text";
 
 const content = {
   title: "Ask in plain words. Get the right people.",
   body: "Ask Nyra like you would ask a teammate. Pick a job below and watch her do it.",
   points: [],
 };
-// Nyra's four jobs (from ezrecruit.ai/nyra): a short title, then a real example as the punchline.
-const SPECS = [
-  ["Finds them.", "“Java devs in Pune, ready now.”"],
-  ["Does the work.", "“Ravi joined yesterday.” Logged."],
-  ["Knows the numbers.", "“Which roles are at risk?”"],
-  ["Asks first.", "Preview. Confirm. Undo."],
-];
 export const CANDIDATES = [
   { name: "Arjun Mehta", role: "Senior Java developer", initials: "AM", score: 94, reason: "Spring Boot, 6 yrs", note: "Available in 30 days", fit: [96, 92, 88] },
   { name: "Sara Thomas", role: "Backend engineer", initials: "ST", score: 89, reason: "Microservices, AWS", note: "Serving notice, 15 days", fit: [90, 86, 84] },
@@ -76,26 +66,8 @@ export function SplitCopy({ title, body, points, link, children }: CopyProps) {
 
 export default function Nyra() {
   return (
-    <section data-section="Split AI" id="ask-nyra" className="flex flex-col items-center gap-12 overflow-clip px-5 py-18 md:gap-16 md:px-6 md:py-24 lg:gap-20 lg:px-8 lg:py-32">
-      <div data-reveal className="flex items-center gap-2.5 rounded-full bg-blue-soft py-2 pr-5 pl-3.5 text-[15px] shadow-[inset_0_0_0_1px_#bfe3ff]">
-        <NyraMark size={18} once className="text-blue-deep" />
-        <AnimatedShinyText tone="blue" className="font-medium">Meet Nyra</AnimatedShinyText>
-      </div>
+    <section data-section="Split AI" id="ask-nyra" className="flex flex-col items-center overflow-clip px-5 py-18 md:px-6 md:py-24 lg:px-8 lg:py-32">
       <NyraDemo copy={content} />
-      <div className="flex w-full max-w-[1136px] flex-col items-center gap-8">
-        <div className="grid w-full grid-cols-2 gap-3 lg:grid-cols-4">
-          {SPECS.map(([label, value], i) => (
-            <div key={label} data-reveal style={{ "--d": `${i * 0.08}s` } as React.CSSProperties} className="flex flex-col items-start gap-2 rounded-[24px] bg-fill-2 px-4 py-5 md:p-6">
-              <h3 className="text-xl leading-6 font-medium tracking-[-0.03em] md:text-2xl md:leading-[28.8px]">{label}</h3>
-              <p className="text-[15px] leading-[22px] text-muted">{value}</p>
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-col items-center gap-4">
-          <TryNyra label="Try it now!" />
-          <TextCta href="/nyra/">See all 100+ things she can do</TextCta>
-        </div>
-      </div>
     </section>
   );
 }
