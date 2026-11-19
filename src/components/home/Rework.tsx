@@ -35,12 +35,11 @@ export default function Rework() {
               </p>
               {FIELDS.map((f, i) => (
                 <div key={f.label} className={`relative flex items-center justify-between overflow-clip border-t border-ink/8 py-3 ${RISE}`} style={from("translateY(12px)", 0.28 + i * 0.08)}>
-                  {f.match && <span className={`absolute inset-y-1 -inset-x-2 rounded-lg bg-blue/12 ${RISE}`} style={from("translateX(-101%)", 1 + i * 0.1)} />}
                   <span className="relative flex flex-col gap-0.5">
                     <span className={LABEL}>{f.label}</span>
                     <span className={VALUE}>{f.value}</span>
                   </span>
-                  {f.match && <span className="relative rounded-full bg-white px-2 py-0.5 text-xs leading-[15.6px] font-medium text-blue-deep">Match</span>}
+                  {f.match && <span className="relative rounded-full bg-blue-soft px-2 py-0.5 text-xs leading-[15.6px] font-medium text-blue-deep">Match</span>}
                 </div>
               ))}
 
