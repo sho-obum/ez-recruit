@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/contact-us", "destination": "/demo/", "permanent": true },
+    { "source": "/contact-us/", "destination": "/demo/", "permanent": true },
+    { "source": "/enforcing-structured-sourcing", "destination": "/", "permanent": true },
+    { "source": "/enforcing-structured-sourcing/", "destination": "/", "permanent": true },
+    { "source": "/how-recruiting-fails", "destination": "/", "permanent": true },
+    { "source": "/how-recruiting-fails/", "destination": "/", "permanent": true },
+    { "source": "/agency-challenges", "destination": "/", "permanent": true },
+    { "source": "/agency-challenges/", "destination": "/", "permanent": true },
+    { "source": "/what-changes-when-structure-is-enforced", "destination": "/", "permanent": true },
+    { "source": "/what-changes-when-structure-is-enforced/", "destination": "/", "permanent": true },
+    { "source": "/product-overview", "destination": "/", "permanent": true },
+    { "source": "/product-overview/", "destination": "/", "permanent": true }
+  ]
+}

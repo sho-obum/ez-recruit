@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/* Breakpoints follow the template: phone < 810, tablet 810 to 1199, desktop >= 1200. */
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-md: 810px;
+  --breakpoint-lg: 1200px;
+
+  --font-sans: var(--font-switzer), system-ui, sans-serif;
+  --font-display: var(--font-manrope), var(--font-switzer), sans-serif;
+
+  --color-ink: #141414;
+  --color-ink-2: #404040;
+  --color-muted: #707070;
+  --color-faint: #adadad;
+  --color-line: #ebebeb;
+  --color-fill: #f0f0f0;
+  --color-fill-2: #f7f7f7;
+  /* EZRecruit logo blue. */
+  --color-blue: #3aa8f2;
+  --color-blue-deep: #0f6fb8;
+  --color-blue-soft: #e4f3ff;
+  --color-ink-hover: #2c2c30;
+  --color-blue-press: #0c5c99;
+  /* Pastel palette: card backgrounds and progress bars. */
+  --color-lilac: #d8efff;
+  --color-rose: #e4f3ff;
+  --color-mint: #c9ebff;
+  --color-soft: #c9c9ce;
+  --color-page: #f7f7f8;
+  --color-night: #0b0b0d;
+  --color-nav-link: #4a4a4f;
+  --color-nav-hover: #ededef;
+  --color-live: #1db37a;
+  --color-lime: #bfe3ff;
+  --color-green: #3aa8f2;
+  --color-orange: #3a8fd0;
+  --color-violet: #0c5c99;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 90px; }
+  body { @apply bg-white font-sans text-ink antialiased; overflow-x: clip; }
+  h1, h2, h3 { font-family: var(--font-display); }
+}
+
+/* Label roll used by pill buttons and nav links: the second copy slides up on hover. */
+@utility roll {
+  display: flex; flex-direction: column; gap: 8px; overflow: clip;
+  & > span { transition: transform 0.45s var(--ease-out); }
+}
+@utility roll-trigger {
+  &:hover .roll > span { transform: translateY(calc(-100% - 8px)); }
+  &:hover .icon-roll > svg { transform: translateX(28px); }
+}
+@utility icon-roll {
+  display: flex; justify-content: flex-end; gap: 12px; width: 16px; overflow: clip;
+  & > svg { flex: none; transition: transform 0.45s var(--ease-out); }
+}
+
+/* Entrance animations; --boot holds them until the intro screen has faded. */
+@utility reveal-words {
+  & > span {
+    display: inline-block; opacity: 0; filter: blur(8px); transform: translateY(10px);
+    animation: word-in 0.9s var(--ease-out) forwards;
+    animation-delay: calc(var(--boot, 0s) + var(--d, 0s) + var(--i) * 0.05s);
+  }
+}
+@utility fade-up {
+  opacity: 0; transform: translateY(14px);
+  animation: fade-up 0.9s var(--ease-out) forwards;
+  animation-delay: calc(var(--boot, 0s) + var(--d, 0s));
+}
+@keyframes word-in { to { opacity: 1; filter: blur(0); transform: none; } }
+@keyframes fade-up { to { opacity: 1; transform: none; } }
+@keyframes nav-in { from { opacity: 0; transform: translateY(-24px); } }
+@keyframes mark-in { from { opacity: 0; transform: scale(0.4) rotate(-120deg); } }
+@keyframes track-in { from { opacity: 0; transform: translateY(8px); } }
+@keyframes fill { to { transform: none; } }
+@keyframes loader-out { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+
+html.boot { --boot: 1.6s; }
+
+/* Scroll reveal: [data-reveal] fades up when it enters the view (only hidden once JS is running). */
+html.js [data-reveal] {
+  opacity: 0; translate: 0 18px;
+  transition: opacity 0.8s var(--ease-out), translate 0.8s var(--ease-out);
+  transition-delay: var(--d, 0s);
+}
+html.js [data-reveal].is-in { opacity: 1; translate: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-words > span, .fade-up { animation: none; opacity: 1; filter: none; transform: none; }
+  html.js [data-reveal] { opacity: 1; translate: none; transition: none; }
+}
+
+/* Nyra button: whitish blue pill; letters deepen one after another, the sparkle flickers, the glow grows on hover. */
+.nyra-btn {
+  background: linear-gradient(#f4faff, #d3eaff);
+  box-shadow: inset 0 1px 0 #fff, inset 0 -2px 4px rgba(15,111,184,0.1), 0 0 0 1px #bfe3ff, 0 10px 28px -10px rgba(58,168,242,0.6);
+  transition: box-shadow 0.4s var(--ease-out), translate 0.3s var(--ease-out);
+}
+.nyra-btn:hover {
+  translate: 0 -1px;
+  box-shadow: inset 0 1px 0 #fff, inset 0 -2px 4px rgba(15,111,184,0.1), 0 0 0 1px #9fd3ff, 0 0 0 5px rgba(58,168,242,0.2), 0 14px 40px -8px rgba(58,168,242,0.8);
+}
+.nyra-btn-letter { display: inline-block; color: #3a8fd0; animation: nyra-letter 2.8s ease-in-out infinite; }
+.nyra-btn:hover .nyra-btn-letter { animation-duration: 1.3s; }
+@keyframes nyra-letter { 0%, 26%, 100% { color: #3a8fd0; text-shadow: none; } 13% { color: #0b5596; text-shadow: 0 0 8px rgba(58,168,242,0.6); } }
+@media (prefers-reduced-motion: reduce) { .nyra-btn-letter { animation: none; color: var(--color-blue-deep); } }
+
+/* Nyra's mark (same motion as the product): the N draws, the spark pops in, both hold and retract; 3s loop. */
+.nyra-mark-n { stroke-dasharray: 60; stroke-dashoffset: 60; animation: nyra-draw 3s ease-in-out infinite; }
+.nyra-mark-spark { transform-box: view-box; transform-origin: 19px 4px; opacity: 0; animation: nyra-pop 3s ease-in-out infinite; }
+.nyra-mark-once .nyra-mark-n { animation: nyra-draw-once 1.1s ease-out forwards; }
+.nyra-mark-once .nyra-mark-spark { animation: nyra-pop-once 0.5s ease-out 0.9s forwards; }
+@keyframes nyra-draw { 0% { stroke-dashoffset: 60; } 45%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 60; } }
+@keyframes nyra-pop { 0%, 40% { opacity: 0; transform: scale(0); } 55% { opacity: 1; transform: scale(1.35); } 65%, 85% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0); } }
+@keyframes nyra-draw-once { to { stroke-dashoffset: 0; } }
+@keyframes nyra-pop-once { 0% { opacity: 0; transform: scale(0); } 60% { opacity: 1; transform: scale(1.35); } 100% { opacity: 1; transform: scale(1); } }
+/* Idle breath: a thin ring swells and fades every few seconds. */
+.nyra-breath { border: 1.5px solid var(--color-blue); opacity: 0; animation: nyra-breathe 3.4s var(--ease-out) 0.8s infinite; }
+@keyframes nyra-breathe { 0% { opacity: 0.6; transform: scale(1); } 55%, 100% { opacity: 0; transform: scale(1.55); } }
+/* "Nyra is thinking": the mark pulses and the text shimmers. */
+.nyra-thinking .nyra-mark { animation: nyra-pulse 1.4s ease-in-out infinite; }
+.nyra-thinking-text { animation: nyra-shimmer 1.6s ease-in-out infinite; }
+@keyframes nyra-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.85); } }
+@keyframes nyra-shimmer { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+@media (prefers-reduced-motion: reduce) {
+  .nyra-mark-n { animation: none; stroke-dashoffset: 0; }
+  .nyra-mark-spark { animation: none; opacity: 1; transform: none; }
+  .nyra-breath, .nyra-thinking .nyra-mark, .nyra-thinking-text { animation: none; }
+}
+
+/* Nav "Book a demo": white pill with a faint moving gradient border; a light glow appears under it on hover (after the 21st.dev "Rainbow button", dillionverma, in its white variant). */
+.rainbow-btn {
+  --rainbow: #bfe3ff, #ddd2fb, #fbd0e8, #ffe0c2, #c4ecfb, #bfe3ff;
+  --glow: #3aa8f2, #b48cf5, #f58ac8, #ffb86b, #62d4f6, #3aa8f2;
+  border: 1.5px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, var(--rainbow)) border-box;
+  background-size: 100% 100%, 200% 100%;
+  animation: rainbow 6s linear infinite;
+}
+.rainbow-btn::before {
+  content: ""; position: absolute; z-index: -1; left: 50%; bottom: -20%; width: 60%; height: 20%; translate: -50% 0;
+  background: linear-gradient(90deg, var(--glow)); background-size: 200% 100%;
+  filter: blur(10px); opacity: 0; transition: opacity 0.3s;
+  animation: rainbow-glow 6s linear infinite;
+}
+.rainbow-btn:hover::before { opacity: 0.45; }
+@keyframes rainbow { from { background-position: 0 0, 0% 0; } to { background-position: 0 0, 200% 0; } }
+@keyframes rainbow-glow { from { background-position: 0% 0; } to { background-position: 200% 0; } }
+@media (prefers-reduced-motion: reduce) { .rainbow-btn, .rainbow-btn::before { animation: none; } }
+
+/* Long text (blog posts, legal): comfortable reading column in the site fonts. */
+.prose-ez { font-size: 1.0625rem; line-height: 1.75; color: var(--color-ink-2); }
+.prose-ez > * + * { margin-top: 1.25em; }
+.prose-ez h2 { margin-top: 2.2em; font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.04em; color: var(--color-ink); scroll-margin-top: 110px; }
+.prose-ez h3 { margin-top: 1.8em; font-size: 1.25rem; line-height: 1.3; letter-spacing: -0.03em; color: var(--color-ink); }
+.prose-ez strong { color: var(--color-ink); font-weight: 600; }
+.prose-ez a { color: var(--color-blue-deep); text-decoration: underline; text-decoration-color: rgba(15,111,184,0.3); text-underline-offset: 4px; }
+.prose-ez a:hover { text-decoration-color: currentColor; }
+.prose-ez ul, .prose-ez ol { padding-left: 1.4em; }
+.prose-ez ul { list-style: disc; }
+.prose-ez ol { list-style: decimal; }
+.prose-ez li + li { margin-top: 0.5em; }
+.prose-ez li::marker { color: var(--color-faint); }
+.prose-ez blockquote { border-radius: 20px; background: var(--color-blue-soft); padding: 1.25rem 1.5rem; color: var(--color-ink); }
+.prose-ez blockquote > * + * { margin-top: 0.75em; }
+.prose-ez blockquote footer { font-size: 0.875rem; color: var(--color-muted); }
+
+/* Animations for the 21st.dev components (marquee, border beam). */
+@theme {
+  --animate-marquee: marquee var(--duration) linear infinite;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-border-beam: border-beam calc(var(--duration) * 1s) infinite linear;
+  --animate-shiny-text: shiny-text 8s infinite;
+  @keyframes shiny-text { 0%, 90%, 100% { background-position: calc(-100% - var(--shiny-width)) 0; } 30%, 60% { background-position: calc(100% + var(--shiny-width)) 0; } }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(calc(-100% - var(--gap))); } }
+  @keyframes marquee-vertical { from { transform: translateY(0); } to { transform: translateY(calc(-100% - var(--gap))); } }
+  @keyframes border-beam { to { offset-distance: 100%; } }
+}
+@media (prefers-reduced-motion: reduce) { .animate-marquee, .animate-marquee-vertical, .animate-shiny-text { animation: none; } }

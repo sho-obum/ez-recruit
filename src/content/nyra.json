@@ -1,0 +1,1669 @@
+{
+ "areas": [
+  {
+   "id": "start",
+   "n": "01",
+   "title": "Getting started",
+   "text": "A colleague who greets you, briefs you and remembers the conversation.",
+   "cards": [
+    {
+     "title": "“What can you do?” help menu",
+     "tag": "",
+     "hook": "One tap shows exactly what Nyra can do for you, nothing you can't use.",
+     "desc": "Answers in one line and shows five capability buttons, with Load more. The list only includes what your permissions allow.",
+     "prompts": [
+      "“What can you do?”",
+      "“Help”",
+      "“menu”"
+     ],
+     "happens": "Answer card with tappable capability buttons.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Greetings and introductions",
+     "tag": "",
+     "hook": "Friendly from the first hello, with a fresh greeting every day.",
+     "desc": "Replies to greetings and small talk, and introduces herself when asked. Greetings change with the time of day and day of the week.",
+     "prompts": [
+      "“Hi”",
+      "“Good morning”",
+      "“Who are you?”"
+     ],
+     "happens": "Short reply in the panel; spoken too if voice is on.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Morning briefing: “What's on my plate?”",
+     "tag": "",
+     "hook": "Start every day knowing exactly what needs you, sorted by urgency.",
+     "desc": "One briefing with today's interviews, feedback you owe, reminders that are due, goals and items waiting on you. Each item appears only if you can see that page.",
+     "prompts": [
+      "“What's on my plate?”",
+      "“Good morning”",
+      "“What do I have today?”"
+     ],
+     "happens": "Briefing card with links to each item.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Festive and personal greetings",
+     "tag": "",
+     "hook": "Nyra celebrates with your team: Diwali fireworks, Holi colours, birthdays and work anniversaries.",
+     "desc": "On festivals and holidays Nyra greets the user with a matching animation: fireworks and diyas for Diwali, gulal for Holi, snow for Christmas, a crescent for Eid, the tricolour for Independence Day and Republic Day. US holidays such as Thanksgiving are included. It also greets birthdays and work anniversaries, and sends a belated wish within three days.",
+     "prompts": [
+      "(automatic when you open Nyra on the day)"
+     ],
+     "happens": "Greeting and a short animation in the panel.",
+     "who": "Everyone who has Nyra",
+     "note": "Uses the India and US holiday sets. Moon-dependent dates such as Eid follow the published calendar."
+    },
+    {
+     "title": "Spoken replies (voice)",
+     "tag": "",
+     "hook": "Nyra can talk you through it in a natural Indian English voice.",
+     "desc": "Reads replies aloud once you turn on the speaker. Uses a natural Indian English voice, and a Hindi voice for Hindi replies.",
+     "prompts": [
+      "“How do I turn on voice?”",
+      "“Why isn't Nyra speaking?”"
+     ],
+     "happens": "Replies are spoken as well as written.",
+     "who": "Everyone who has Nyra",
+     "note": "Voice is off by default; each user turns it on once. Written replies always show."
+    },
+    {
+     "title": "English, Hindi and Hinglish",
+     "tag": "",
+     "hook": "Ask the way your team actually talks: English, Hindi or Hinglish.",
+     "desc": "Understands typed English, Hindi (Devanagari) and romanised Hinglish, and replies in the language you choose.",
+     "prompts": [
+      "“mere kitne interviews hain is week”",
+      "“JC-2041 ka status”",
+      "“Rahul ka interview cancel kar do”"
+     ],
+     "happens": "Same answers and actions, whatever the language.",
+     "who": "Everyone who has Nyra",
+     "note": "A few Hinglish flow words (for example “doosra wala” for “the other one”) are still learning."
+    },
+    {
+     "title": "Past conversations",
+     "tag": "",
+     "hook": "Pick up any conversation exactly where you left it.",
+     "desc": "Your chat stays when you close the panel. The same thread continues on the Chat with Nyra page, and the Nyra Conversations page lists your past chats so you can resume any of them.",
+     "prompts": [
+      "“Show my past Nyra chats”",
+      "“Where are my Nyra chats?”"
+     ],
+     "happens": "Opens the Nyra Conversations page.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Smart follow-ups and clarifying buttons",
+     "tag": "",
+     "hook": "Talk naturally. Nyra keeps the thread and asks only when it really needs to.",
+     "desc": "Follows on from the last answer (“which ones?”, “same for last month”). When an ask is thin or ambiguous, Nyra offers buttons to choose from instead of guessing.",
+     "prompts": [
+      "“Which ones?”",
+      "“Same for last month”",
+      "“Find good people then (Nyra asks: which role?)”"
+     ],
+     "happens": "Follow-up answer, or a short question with buttons.",
+     "who": "Everyone who has Nyra",
+     "note": "Pointing at a list item (“the oldest one”) works in some flows, not all."
+    },
+    {
+     "title": "Rate a reply",
+     "tag": "",
+     "hook": "Every thumbs-up or thumbs-down makes Nyra better.",
+     "desc": "Thumbs up or down on any reply. The team uses this feedback to improve Nyra.",
+     "prompts": [
+      "(tap 👍 / 👎 on a reply)"
+     ],
+     "happens": "Feedback saved.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Hide the floating Nyra launcher",
+     "tag": "",
+     "hook": "Prefer a quieter screen? Hide Nyra's floating button until you want it back.",
+     "desc": "Each user can hide the floating Nyra launcher from their own session. Nyra and Chat with Nyra stay available from the usual pages; the floating button stays off until you turn it back on.",
+     "prompts": [
+      "“Hide Nyra”",
+      "“Hide the Nyra button”",
+      "“Turn off the floating Nyra launcher”"
+     ],
+     "happens": "Floating launcher hides for you. Open Nyra from Chat with Nyra or the menu when you need it.",
+     "who": "Everyone who has Nyra",
+     "note": "Per user only; it doesn't hide Nyra for the whole workspace."
+    }
+   ]
+  },
+  {
+   "id": "find",
+   "n": "02",
+   "title": "Finding candidates",
+   "text": "Describe the person you need. Nyra finds them, refines with you, and watches for new ones.",
+   "cards": [
+    {
+     "title": "Plain-language candidate search",
+     "tag": "Answer",
+     "hook": "Type it like you'd say it. Nyra turns it into a scored search in seconds.",
+     "desc": "Searches your candidate database by skills, location, experience and more, and returns the best matches. It keeps what you already said (skill, city, remote, fresher) and only asks for what's still missing. “Top N only” keeps the search card and does not write a shortlist.",
+     "prompts": [
+      "“Find Java developers in Bangalore with 5+ years”",
+      "“node js developers remote”",
+      "“fresher QA in Kolkata”",
+      "“MERN developers in NCR”"
+     ],
+     "happens": "Search card with the top matches and an Open full results button.",
+     "who": "Anyone who can search candidates",
+     "note": "Nyra asks rather than invents when the request is too vague. Zero-score matches stay hidden in AI Matches and related lists."
+    },
+    {
+     "title": "Find for a job or client",
+     "tag": "Answer",
+     "hook": "Point Nyra at a job and it sources against it.",
+     "desc": "Finds candidates for a job by its code or title, or for a client (it picks the client's job or asks which one).",
+     "prompts": [
+      "“Find people for JC-1234”",
+      "“Candidates for the Senior Java role”",
+      "“Java for Acme”"
+     ],
+     "happens": "Search card scoped to that job.",
+     "who": "Anyone who can search candidates",
+     "note": ""
+    },
+    {
+     "title": "Refine the search in conversation",
+     "tag": "Answer",
+     "hook": "Narrow down like you're talking to a sourcer.",
+     "desc": "Add or remove skills, exclude cities or employers, limit notice period, ask for immediate joiners, or show more. Nyra suggests the next filter to try and does not re-ask for slots you already filled.",
+     "prompts": [
+      "“Add Kafka”",
+      "“Not Hyderabad”",
+      "“Notice under 30 days”",
+      "“Only immediate joiners”"
+     ],
+     "happens": "Updated search card with suggested next filters.",
+     "who": "Anyone who can search candidates",
+     "note": "Gender and industry filters are read but results vary."
+    },
+    {
+     "title": "Open full results / Chat with Nyra search",
+     "tag": "Answer",
+     "hook": "Move from chat to the full search page in one tap.",
+     "desc": "Opens the full Search with Nyra results, or continues the search on the Chat with Nyra page. Can also show matches on a job's tracker.",
+     "prompts": [
+      "“Open full list”",
+      "“Show these matches on tracker”"
+     ],
+     "happens": "Deep link to the search results or the tracker.",
+     "who": "Anyone who can search candidates",
+     "note": ""
+    },
+    {
+     "title": "Global Search and Tagged Search shortcuts",
+     "tag": "Answer",
+     "hook": "Every search mode is one sentence away.",
+     "desc": "Opens Global Search (prefilled with your skills or job) or Tagged Search for you.",
+     "prompts": [
+      "“Search globally for Java developers in Pune”",
+      "“Show tagged search for React”"
+     ],
+     "happens": "Opens the matching search page, prefilled.",
+     "who": "Global Search: Anyone with Global Search access. Tagged Search: Anyone who can see the candidate list / Tagged Search",
+     "note": "These are separate search products: Nyra opens them, but results are shown on those pages."
+    },
+    {
+     "title": "Save this search",
+     "tag": "Action",
+     "hook": "Keep your best searches one click away.",
+     "desc": "Saves the current search to your Saved searches.",
+     "prompts": [
+      "“Save this search”"
+     ],
+     "happens": "Preview then Confirm. Saved to Recent & saved searches.",
+     "who": "Anyone who can search candidates",
+     "note": ""
+    },
+    {
+     "title": "Search alerts for new matches",
+     "tag": "Action",
+     "hook": "Never miss a new match. Nyra checks for you every morning.",
+     "desc": "Turns a search into a daily alert. Every morning at 08:30 (India time; New York time for US workspaces) Nyra runs the search for you and tells you about new matches.",
+     "prompts": [
+      "“Tell me when a new Java developer in Pune comes in”",
+      "“Alert me for new React developers in Bangalore”",
+      "“Stop my search alert”",
+      "“Turn my search alert back on”"
+     ],
+     "happens": "Preview then Confirm (undo for 30 s). New matches arrive as an in-app notification and an email to you.",
+     "who": "Anyone who can see the candidate list / Tagged Search",
+     "note": "One notification per alert per day, a capped number of alerts per person. An alert pauses after 7 days of inactivity (you get one email) and comes back with “turn my search alert back on”."
+    },
+    {
+     "title": "Candidates like this one",
+     "tag": "Answer",
+     "hook": "Found a great candidate? Nyra finds more like them.",
+     "desc": "Takes a candidate's role, top skills and experience band and searches for similar people, leaving the original person out. Nyra offers an “Only <their city>” filter button.",
+     "prompts": [
+      "“Candidates like Arjun Mehta”",
+      "“Find more like her”",
+      "“People similar to Priya on JC-88”"
+     ],
+     "happens": "Search card, just like a normal find, with Show more and refine.",
+     "who": "Anyone who can search candidates",
+     "note": "The person must be on a job you can see. If the name fits two people, Nyra asks which one."
+    },
+    {
+     "title": "Who applied recently",
+     "tag": "Answer",
+     "hook": "See every new applicant across your jobs, including career-page applies.",
+     "desc": "Counts the people who applied or were tagged to your jobs in a period, per job, including applications from the career page, and lists the latest ones.",
+     "prompts": [
+      "“Who applied this week for my jobs?”",
+      "“Who applied to JG-1138 last week?”",
+      "“Any new applicants today?”"
+     ],
+     "happens": "Answer card with counts per job, the latest 10 people with profile links, and a tracker link.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Periods: today, yesterday, this or last week (weeks start Monday), this or last month, last 7 or 30 days. Default is this week."
+    }
+   ]
+  },
+  {
+   "id": "understand",
+   "n": "03",
+   "title": "Understanding candidates",
+   "text": "Everything you need to know about a candidate, in one question.",
+   "cards": [
+    {
+     "title": "Candidate summary and profile",
+     "tag": "Answer",
+     "hook": "The candidate in a glance, with the full profile one tap away.",
+     "desc": "Summarises a candidate from their profile (role, experience, skills, location, notice) and links to the full profile. Works for candidates who aren't on any job, and if a candidate's search details are missing, the profile opens from the saved record instead of failing.",
+     "prompts": [
+      "“Summarise Priya”",
+      "“Open Priya's profile”"
+     ],
+     "happens": "Summary card with an Open profile link.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Where is this candidate in the pipeline?",
+     "tag": "Answer",
+     "hook": "Instant pipeline status: no clicking through trackers.",
+     "desc": "Shows a candidate's current stage on each job and links to the tracker.",
+     "prompts": [
+      "“Where is Ravi in the pipeline?”",
+      "“Where is this candidate stuck?”"
+     ],
+     "happens": "Answer card with a tracker link.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Compare two candidates",
+     "tag": "Answer",
+     "hook": "Side-by-side comparison for confident shortlisting.",
+     "desc": "Puts two candidates side by side for a job: experience, skills, notice and match score.",
+     "prompts": [
+      "“Compare Priya and Ravi for JC-1”"
+     ],
+     "happens": "Comparison card.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Duplicate check: “Has this person applied before?”",
+     "tag": "Answer",
+     "hook": "Catch duplicates before they cost you a submission.",
+     "desc": "Checks whether the candidate is already on file or has applied before, and on which jobs.",
+     "prompts": [
+      "“Has Farhan Qureshi applied before?”",
+      "“Any duplicates for her?”"
+     ],
+     "happens": "Answer card listing the matching records.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Shows only jobs you can see. Merging duplicates isn't available."
+    },
+    {
+     "title": "Last contact and profile owner",
+     "tag": "Answer",
+     "hook": "Know who spoke to the candidate last, and when, before you call.",
+     "desc": "Tells you when the candidate was last contacted and who owns their profile.",
+     "prompts": [
+      "“When did we last speak to Sanjay Patil?”",
+      "“Who owns Deepa's profile?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "What did the panel say?",
+     "tag": "Answer",
+     "hook": "Every round's feedback, summarised in one answer.",
+     "desc": "Summarises interview feedback and outcomes across all rounds for a candidate.",
+     "prompts": [
+      "“What did the panel say about Suresh Babu, all rounds?”"
+     ],
+     "happens": "Answer card, round by round.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Interview questions to ask",
+     "tag": "Answer",
+     "hook": "Walk into every interview with sharp, job-specific questions.",
+     "desc": "Gives the job's own evaluation questions, plus probing questions on the skills to test: the ones you name and the job's must-haves the CV doesn't mention.",
+     "prompts": [
+      "“What should I ask Karthik in round 2? He's weak on Kafka”",
+      "“Interview questions for Arjun for JC-123”"
+     ],
+     "happens": "List of questions in the panel.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Built from the job's evaluation questions and fixed templates, not free-written. If the job has no questions and no skill to probe, Nyra says so."
+    },
+    {
+     "title": "Offer status",
+     "tag": "Answer",
+     "hook": "“Has she accepted?”, answered instantly.",
+     "desc": "Shows a candidate's offer status on your jobs, or lists the open offers.",
+     "prompts": [
+      "“What's the offer status for Mehul?”",
+      "“Has Mehul accepted?”",
+      "“Mehul ka offer kya hua”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Same-name candidates and clients",
+     "tag": "Answer",
+     "hook": "Two Priyas? Nyra asks which one: no mix-ups.",
+     "desc": "When a name matches more than one candidate or client, Nyra shows lettered choices with job and stage (or client code) so you pick the right one.",
+     "prompts": [
+      "“Add a note on Priya then A) Priya Shah, JC-12, L1 · B) Priya Nair, JC-40, Screening”"
+     ],
+     "happens": "Lettered buttons; nothing happens until you choose.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "jobs",
+   "n": "04",
+   "title": "Jobs and requirements",
+   "text": "From a one-line brief to a live job, plus a sharp eye on every open role.",
+   "cards": [
+    {
+     "title": "Job status",
+     "tag": "Answer",
+     "hook": "Ask about any job and get a status report on the spot.",
+     "desc": "Shows where a job stands: positions, candidates at each stage, last activity and deadline. Find it by job code or title.",
+     "prompts": [
+      "“Status of JC-123”",
+      "“What's happening on the Salesforce QA role?”",
+      "“JC-2041 ka status”"
+     ],
+     "happens": "Answer card with a link to the job.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Jobs at risk",
+     "tag": "Answer",
+     "hook": "Spot slipping jobs before your client does.",
+     "desc": "Lists jobs at risk: deadline near or passed, no submissions, or no recent activity.",
+     "prompts": [
+      "“Which jobs are at risk?”",
+      "“Koi job atki hui hai kya?”"
+     ],
+     "happens": "Answer card listing each job and why it's at risk.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Jobs closing soon",
+     "tag": "Answer",
+     "hook": "See this week's deadlines at a glance.",
+     "desc": "Lists jobs whose deadline falls this week or next week.",
+     "prompts": [
+      "“Jobs closing this week”",
+      "“Deadline next week wali jobs”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Jobs on hold",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Lists jobs on hold, for everyone or for one client.",
+     "prompts": [
+      "“Jobs on hold”",
+      "“Which Acme jobs are on hold?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Jobs nobody is working on",
+     "tag": "Answer",
+     "hook": "No open role gets forgotten.",
+     "desc": "Lists open jobs with no recruiter assigned.",
+     "prompts": [
+      "“Jobs nobody is working on”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Duplicate open jobs",
+     "tag": "Answer",
+     "hook": "Stop the same role being worked twice.",
+     "desc": "Finds open jobs that look like the same role for the same client.",
+     "prompts": [
+      "“Duplicate jobs?”",
+      "“Is there already a React developer job for Nimbus open?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Open roles, ageing jobs and busiest clients",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Counts open jobs, shows ageing jobs, and ranks clients by open roles.",
+     "prompts": [
+      "“How many open roles?”",
+      "“Show ageing jobs”",
+      "“Which client has the most open roles?”"
+     ],
+     "happens": "Answer card with a link to the filtered requirement list.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Which client is this job for? Who's the SPOC?",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Names the client and the client contact (SPOC) on a job.",
+     "prompts": [
+      "“Which client is JG-1138 for?”",
+      "“Who is the SPOC on JG-1138?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Must-haves, nice-to-haves and evaluation questions",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Reads a job's must-have and nice-to-have skills and its evaluation questions, and opens the job's Evaluation tab to add more.",
+     "prompts": [
+      "“What are the must-haves for JC-1?”",
+      "“Nice to haves on JG-9474”",
+      "“Suggest skills for this job”"
+     ],
+     "happens": "Answer card, or a deep link to the job's Evaluation tab.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Draft a job description",
+     "tag": "Answer",
+     "hook": "A polished JD from a one-line brief, in seconds.",
+     "desc": "Writes a JD draft from a short brief (asking for the must-haves), then fills it into the job form with the title and client.",
+     "prompts": [
+      "“Write a JD for a senior backend engineer”",
+      "“Create Java req for ABC client”",
+      "“Open the job form”"
+     ],
+     "happens": "Draft in the panel with Apply to form, Open job form and Create this job buttons.",
+     "who": "Anyone who can view requirements",
+     "note": "Starting a JD from an attached file is available, but an unreadable file only shows a short warning."
+    },
+    {
+     "title": "Refine a job description",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Tightens or rewrites a JD for seniority, tone or length.",
+     "prompts": [
+      "“Tighten this JD for a senior hire”",
+      "“Make it shorter”"
+     ],
+     "happens": "Revised draft in the panel.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "JD health check",
+     "tag": "Answer",
+     "hook": "Catch gaps and biased wording before the JD goes out.",
+     "desc": "Checks the JD on screen for what candidates look for first (title, location, experience, CTC, must-have skills, responsibilities, notice period) and flags gender-coded or exclusionary words with a neutral alternative.",
+     "prompts": [
+      "“Is anything missing in this JD?”",
+      "“Any gendered words in here?”"
+     ],
+     "happens": "List of issues found.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Usual skills, experience and CTC for a role",
+     "tag": "Answer",
+     "hook": "Benchmarks from your own hiring history.",
+     "desc": "Looks at your workspace's past jobs for the same role and tells you the usual skills and the typical experience and CTC range.",
+     "prompts": [
+      "“What skills do we usually ask for a QA engineer?”",
+      "“Typical experience for a senior Java role?”"
+     ],
+     "happens": "Answer card naming the past jobs it used.",
+     "who": "Anyone who can view requirements",
+     "note": "Only as good as your past jobs for that role. Nyra says so when there are none."
+    },
+    {
+     "title": "Best past JD for a role",
+     "tag": "Answer",
+     "hook": "Reuse what worked: the JD behind your best hires.",
+     "desc": "Finds the past JD for the same role that led to the most hires or applications.",
+     "prompts": [
+      "“Show me our best past JD for a data analyst”"
+     ],
+     "happens": "Answer card with a link to that job.",
+     "who": "Anyone who can view requirements",
+     "note": ""
+    },
+    {
+     "title": "Create the job from the drafted JD",
+     "tag": "Action",
+     "hook": "From brief to live requirement without opening a form.",
+     "desc": "After drafting, Nyra asks for the client and its contact, then creates the job using the same checks as the job form. Designation values are stored as ids (not free-text job titles), so requirement lists stay stable.",
+     "prompts": [
+      "“Create this job”",
+      "“Create the job for Amazon”",
+      "“Use this JD to create the job”"
+     ],
+     "happens": "Preview of every field (including defaults such as one Permanent position and you as Org SPOC) then tap Confirm. The job gets its job code, screening questions and apply link.",
+     "who": "Anyone who can view requirements",
+     "note": "Can't be undone from chat. Defaults it fills are shown on the preview so you can change them on the job page afterwards."
+    },
+    {
+     "title": "Put a job on hold, close it or reopen it",
+     "tag": "Action",
+     "hook": "Change a job's status in one sentence.",
+     "desc": "Changes a job's status exactly as the requirement page does. Closing also takes it off EzRefer.",
+     "prompts": [
+      "“Put JC-123 on hold”",
+      "“Close the job JC-123”",
+      "“Reopen JG-9474”"
+     ],
+     "happens": "Preview then Confirm. Undo for 30 s on hold and reopen.",
+     "who": "Team leads who can view requirements",
+     "note": "A close can't be undone from chat."
+    },
+    {
+     "title": "Assign a recruiter to a job",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Adds a teammate as recruiter on a job.",
+     "prompts": [
+      "“Assign JC-123 to Priya”"
+     ],
+     "happens": "Preview then Confirm.",
+     "who": "Anyone who can view requirements",
+     "note": "Works best with the job code. By title alone, Nyra may ask which job."
+    }
+   ]
+  },
+  {
+   "id": "interviews",
+   "n": "05",
+   "title": "Interviews and scheduling",
+   "text": "Book, move and wrap up interviews in plain language, with feedback chased automatically.",
+   "cards": [
+    {
+     "title": "Find a free slot and book an interview",
+     "tag": "Action",
+     "hook": "“Book Priya tomorrow at 3”, done. Nyra checks your calendar and picks the next round.",
+     "desc": "Offers your free hours from the EzRecruit interview calendar, then the job, the candidate and the round. If the time is taken, it offers the nearest free slots.",
+     "prompts": [
+      "“Schedule an interview”",
+      "“What slots do I have tomorrow?”",
+      "“Book Priya for JC-123 tomorrow at 3pm”"
+     ],
+     "happens": "Slot buttons then preview then Confirm. The candidate gets the interview details by email if they have one on file. The interview appears on the Interview Roster.",
+     "who": "Anyone who can view the Interview Roster",
+     "note": "Needs at least 1 hour's notice. Uses the EzRecruit calendar only, not Outlook or Google. Won't double-book a candidate who already has an upcoming interview."
+    },
+    {
+     "title": "Reschedule an interview",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Moves an existing interview to a new time.",
+     "prompts": [
+      "“Reschedule her interview”",
+      "“Move Rahul's interview to Friday 11am”"
+     ],
+     "happens": "Preview then Confirm. The candidate is emailed if they have an address on file.",
+     "who": "Anyone who can view the Interview Roster",
+     "note": "Same 1-hour notice rule. Someone who isn't the interview's owner is asked to check first."
+    },
+    {
+     "title": "Cancel an interview",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Cancels an interview and puts the candidate back at their previous stage with your reason. You can choose to tell the candidate.",
+     "prompts": [
+      "“Cancel that interview”",
+      "“Cancel Rahul's interview, the client postponed”",
+      "“Rahul ka interview cancel kar do”"
+     ],
+     "happens": "Preview then Confirm. Optional email to the candidate (it never includes your reason). Undo for 30 s if no email went out.",
+     "who": "The interview's owner or their team lead",
+     "note": ""
+    },
+    {
+     "title": "Mark a no-show",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Records a past interview as a no-show.",
+     "prompts": [
+      "“Mark Rahul's interview as no-show”",
+      "“Priya didn't show up for the interview”"
+     ],
+     "happens": "Preview then Confirm. Undo for 30 s.",
+     "who": "The interview's owner or their team lead",
+     "note": "Only for interviews whose time has passed."
+    },
+    {
+     "title": "Send a slot-picker link on WhatsApp",
+     "tag": "Action",
+     "hook": "Let candidates pick their own slot from WhatsApp.",
+     "desc": "Sends the candidate a WhatsApp link where they choose an interview slot, using the Interview Scheduler.",
+     "prompts": [
+      "“Send her a slot link”",
+      "“Send Ravi a slot link for JC-123”"
+     ],
+     "happens": "Preview then tap Confirm. WhatsApp message to the candidate.",
+     "who": "Anyone who can view the Interview Roster",
+     "note": "Needs the candidate's phone on file."
+    },
+    {
+     "title": "Automatic interview reminders (WhatsApp)",
+     "tag": "Answer",
+     "hook": "Fewer no-shows: candidates get a WhatsApp reminder an hour before.",
+     "desc": "About an hour before an interview, the candidate gets a WhatsApp reminder with a Confirm availability button. Covers Scheduler slot-picker bookings and interviews booked from the tracker or by Nyra's “book” action (current In Process / scheduled stage only; each booking is claimed once so nobody gets two reminders).",
+     "prompts": [
+      "(automatic; no command needed)"
+     ],
+     "happens": "WhatsApp to the candidate.",
+     "who": "Automatic for the workspace",
+     "note": "Kill switch INTERVIEW_TRACKER_REMINDER_ENABLED (default on). UAT WhatsApps redirect via NyraCandidateMailGuard; prod uses the real number on file."
+    },
+    {
+     "title": "Set the interview panel for a job",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Sets, adds or removes the teammates on a job's interview panel. Feedback nudges then go to them.",
+     "prompts": [
+      "“Set the interview panel for JC-123 to Asha and Ravi”",
+      "“Add Ravi to the panel for JC-123”",
+      "“Remove Asha from the interview panel for JC-123”"
+     ],
+     "happens": "Preview then Confirm. Undo for 30 s.",
+     "who": "Team leads who can view requirements",
+     "note": "Only teammates in your own team."
+    },
+    {
+     "title": "Nudge interviewers who owe feedback",
+     "tag": "Action",
+     "hook": "Chase pending feedback across the team in one line.",
+     "desc": "Finds interviews still waiting for feedback, works out who owes each one (the job's panel, otherwise the recruiter who booked it) and nudges them.",
+     "prompts": [
+      "“Nudge interviewers for pending feedback”",
+      "“Remind my team to give feedback”",
+      "“Nudge Ravi for his feedback”"
+     ],
+     "happens": "Preview listing who will be nudged then Confirm. Each person gets an in-app notification.",
+     "who": "Team leads who can view the Interview Roster",
+     "note": "Teammates only, never anyone outside the company. A capped number of people per nudge."
+    },
+    {
+     "title": "Feedback you owe, and recording feedback",
+     "tag": "Action",
+     "hook": "Clear your feedback backlog without leaving the chat.",
+     "desc": "Lists the interviews you owe feedback on and records the outcome and comment, step by step with buttons if you don't name anyone.",
+     "prompts": [
+      "“Which interviews need my feedback?”",
+      "“Feedback for my last interview”",
+      "“Give feedback on Ravi: selected”",
+      "“Record feedback”"
+     ],
+     "happens": "Owed list then outcome buttons then Confirm. The stage moves the way the tracker's feedback form would move it.",
+     "who": "Anyone who can view the Interview Roster",
+     "note": "Outcome choices come from your workspace's own stages."
+    },
+    {
+     "title": "Email interview details to a candidate",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Sends the candidate the interview details email (Interview Mail).",
+     "prompts": [
+      "“Send interview details to Ravi”",
+      "“Email her the interview details”"
+     ],
+     "happens": "Preview then tap Confirm. Email to the candidate, sent from your connected mailbox.",
+     "who": "Anyone allowed to email trackers",
+     "note": "Needs your mailbox connected in EzRecruit."
+    },
+    {
+     "title": "Email the interview roster to a client",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Sends the client the interview roster (schedule) for a job, or an interview reminder.",
+     "prompts": [
+      "“Send the interview roster for JC-123 to the client”",
+      "“Email the roster schedule to Acme”"
+     ],
+     "happens": "Preview then tap Confirm. Email to the client contact.",
+     "who": "Anyone allowed to email the interview roster to clients",
+     "note": "Needs your mailbox connected."
+    },
+    {
+     "title": "Interview numbers and the roster",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Counts interviews scheduled or conducted for you, your team, a teammate, a job or a client, and opens the Interview Roster. Absolute dates, weekdays and day ranges are honoured (the reply names that date, not “this month”).",
+     "prompts": [
+      "“How many interviews did I schedule this week?”",
+      "“How many interviews scheduled for nov 11?”",
+      "“Interviews between today and Friday”",
+      "“this Wednesday”"
+     ],
+     "happens": "Answer card linking to the filtered Interview Roster.",
+     "who": "Anyone who can view the Interview Roster",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "pipeline",
+   "n": "06",
+   "title": "Pipeline actions",
+   "text": "Move candidates, update offers, email clients and candidates. Always with a preview, often with undo.",
+   "cards": [
+    {
+     "title": "Shortlist a candidate",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Shortlists a candidate onto a job. Nyra offers job and candidate buttons if you don't name them.",
+     "prompts": [
+      "“Shortlist this candidate”",
+      "“Shortlist for JC-123”",
+      "“Shortlist Asha on JC-12”"
+     ],
+     "happens": "Preview then Confirm. Undo for 30 s.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Bulk shortlist",
+     "tag": "Action",
+     "hook": "Shortlist the top five in one go.",
+     "desc": "Shortlists several candidates from the last list or search in one step.",
+     "prompts": [
+      "“Shortlist the top 5”"
+     ],
+     "happens": "One preview listing everyone then one Confirm.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Move a candidate to another stage",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Moves a candidate to the next or a named stage. Stage choices come from your workspace's real stages.",
+     "prompts": [
+      "“Move Ravi on JC-1 to client round”",
+      "“Change status”",
+      "“Move someone forward”"
+     ],
+     "happens": "Stage buttons then preview then Confirm. Undo for 30 s.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Reject with a reason",
+     "tag": "Action",
+     "hook": "A clean rejection with the reason logged, and a polite regret email if you want one.",
+     "desc": "Moves the candidate to the right reject stage for where they are, with your reason recorded as the tracker does. Optionally sends a polite regret email.",
+     "prompts": [
+      "“Reject Rahul for JG-9474, not enough Kafka”",
+      "“Reject Priya on JG-9474 because salary expectations are too high”",
+      "“Mark Ravi as not selected”"
+     ],
+     "happens": "Preview then Confirm. The regret email is optional and never includes the reason. Undo for 30 s when no email went out.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Once a regret email has gone, it can't be undone."
+    },
+    {
+     "title": "Offer and joining updates",
+     "tag": "Action",
+     "hook": "“Ravi joined yesterday”: logged, counted in closures, done.",
+     "desc": "Marks an offer released, accepted, joined or dropped (with a reason), carrying the offer details already on record. Joining logs the joining date, so it counts in Closures.",
+     "prompts": [
+      "“Priya accepted the offer”",
+      "“Ravi joined yesterday”",
+      "“Mark Priya's offer as dropped by the client”",
+      "“Asha backed out”"
+     ],
+     "happens": "Preview then Confirm.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Nyra never makes up offer details. If no CTC is on record, it sends you to the feedback form to release the offer."
+    },
+    {
+     "title": "Add a note on a candidate",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Adds a note to the candidate's record.",
+     "prompts": [
+      "“Add a note on Ravi: wants 20% hike”",
+      "“Note on Priya: available after 15 Dec”"
+     ],
+     "happens": "Preview then Confirm. Undo for 30 s.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Phrase it as “note on <name>: …”. The wording “add a note to <name>” isn't understood yet."
+    },
+    {
+     "title": "Add a candidate from a CV",
+     "tag": "Action",
+     "hook": "Drop a CV in the chat. Nyra reads it and creates the candidate.",
+     "desc": "Upload a CV in the panel. Nyra reads it with the Add Candidate page's own reader and shows what it found. Names come from the resume (not email autofill), and year ranges such as (2022-2026) are not treated as phone numbers. Repeat uploads of the same file hit a content-hash cache so the second parse is instant.",
+     "prompts": [
+      "“Add a candidate from this CV”",
+      "“Upload a resume”"
+     ],
+     "happens": "Preview of the parsed details then Confirm. The candidate is created and becomes searchable straight away.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Refuses a candidate whose email or phone is already on file. Can't be undone from chat."
+    },
+    {
+     "title": "Update a candidate's notice period, CTC or phone",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Changes one field on the candidate record, exactly as the Edit Candidate page would.",
+     "prompts": [
+      "“Update Asha's notice period to 30 days”",
+      "“Change Ravi's expected CTC to 18 LPA”",
+      "“Set Priya's phone number to 98765 43210”"
+     ],
+     "happens": "Preview then Confirm.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Notice period, current or expected CTC, and phone only."
+    },
+    {
+     "title": "Request documents from a candidate",
+     "tag": "Action",
+     "hook": "Collect PAN, payslips and the rest without writing an email.",
+     "desc": "Emails the candidate a request for documents: your workspace's standard list for the job's region, or the documents you name.",
+     "prompts": [
+      "“Request documents from Priya for JC-123”",
+      "“Ask Priya for her PAN and payslips”"
+     ],
+     "happens": "Preview then tap Confirm. Email to the address on the candidate's record; replies come to you.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Goes only to the email on the candidate's record."
+    },
+    {
+     "title": "Follow-up, thank-you and regret emails",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Sends a candidate a follow-up, thank-you or polite regret email.",
+     "prompts": [
+      "“Send Ravi a follow-up”",
+      "“Email her a thank you”",
+      "“Reject politely”"
+     ],
+     "happens": "Preview then tap Confirm. Email to the address on the candidate's record.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Email only (WhatsApp is used just for slot links and reminders)."
+    },
+    {
+     "title": "Send the tracker or CVs to the client",
+     "tag": "Action",
+     "hook": "Send the client their shortlist with the Excel tracker attached, in one line.",
+     "desc": "Emails the client contact (SPOC) the candidate tracker for a job, with the Excel file attached, or sends selected CVs.",
+     "prompts": [
+      "“Send the tracker for JC-123 to the client”",
+      "“Email Acme the shortlist tracker”",
+      "“Send these 3 CVs to Amazon's contact”"
+     ],
+     "happens": "Preview of recipient and candidates then tap Confirm. Email from your connected mailbox with the .xlsx tracker attached.",
+     "who": "Anyone allowed to email trackers to clients",
+     "note": "Needs your mailbox connected in EzRecruit."
+    },
+    {
+     "title": "Reminders for yourself",
+     "tag": "Action",
+     "hook": "“Remind me Friday to chase Acme.” Nyra won't forget.",
+     "desc": "Sets a personal reminder that arrives as an in-app notification at the time you chose.",
+     "prompts": [
+      "“Remind me Friday to chase Acme”",
+      "“Remind me at 4pm to call Priya”"
+     ],
+     "happens": "Preview then Confirm. In-app notification when it's due. Undo for 30 s.",
+     "who": "Everyone who has Nyra",
+     "note": "In-app only, not email."
+    }
+   ]
+  },
+  {
+   "id": "goals",
+   "n": "07",
+   "title": "Goals and targets",
+   "text": "Set, track and respond to CV goals without opening the Goals page.",
+   "cards": [
+    {
+     "title": "Goal status",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Counts and lists your goals: open, waiting for acceptance, overdue and completed (any time window).",
+     "prompts": [
+      "“How many goals do I have open?”",
+      "“Overdue goals”",
+      "“Goals I closed in the last 12 months”",
+      "“Show my open goals”"
+     ],
+     "happens": "Answer card linking to the Goals page.",
+     "who": "Anyone who can view goals",
+     "note": ""
+    },
+    {
+     "title": "CV target vs sourced; who has no goals",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Compares CV targets with CVs sourced, and lists teammates with no goals.",
+     "prompts": [
+      "“CV target vs sourced”",
+      "“Who on my team has no goals?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view goals",
+     "note": ""
+    },
+    {
+     "title": "Assign a CV goal",
+     "tag": "Action",
+     "hook": "Hand out sourcing targets in one sentence.",
+     "desc": "Gives a teammate a CV target on a job, with a deadline.",
+     "prompts": [
+      "“Assign 10 CVs on JC-123 to Ravi”",
+      "“Create a goal for Priya on JC-1”"
+     ],
+     "happens": "Preview then Confirm. The teammate is notified.",
+     "who": "Anyone who can view goals",
+     "note": "Goals are CV targets per job."
+    },
+    {
+     "title": "Update a goal",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Changes a goal's target or deadline.",
+     "prompts": [
+      "“Extend Ravi's goal deadline to Friday”",
+      "“Make Priya's goal 15 CVs”"
+     ],
+     "happens": "Preview then Confirm. The goal's owner is notified.",
+     "who": "Anyone who can view goals",
+     "note": ""
+    },
+    {
+     "title": "Accept or decline a goal",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Accepts or declines a goal someone sent you.",
+     "prompts": [
+      "“Accept this goal”",
+      "“Decline the goal from Asha”"
+     ],
+     "happens": "Preview then Confirm.",
+     "who": "Anyone who can view goals",
+     "note": "Only goals sent to you by someone else and still waiting for an answer."
+    },
+    {
+     "title": "Nudge everyone with overdue goals",
+     "tag": "Action",
+     "hook": "Chase every overdue CV goal on the team in one line.",
+     "desc": "Finds teammates whose accepted goals are past the deadline and still short of the CV target, and nudges each one.",
+     "prompts": [
+      "“Nudge everyone with overdue goals”",
+      "“Remind my team about overdue goals”"
+     ],
+     "happens": "Preview listing the people and their goals then tap Confirm. Each teammate gets an in-app notification that opens their Goals.",
+     "who": "Team leads who can view goals",
+     "note": "Your own team only, up to 25 people per nudge, and each goal at most once a day. No email or WhatsApp."
+    },
+    {
+     "title": "Set role targets for a period",
+     "tag": "Action",
+     "hook": "Set the quarter's targets for a whole role in one sentence.",
+     "desc": "Sets targets (for example closures) for everyone in a role or team for a month, quarter or year, using the same save as the Team Targets page.",
+     "prompts": [
+      "“Set Q4 targets for senior recruiters: 6 closures”",
+      "“Set next month's targets for the Delhi team: 4 closures”"
+     ],
+     "happens": "Preview of every team affected then tap Confirm. The Team Targets history shows “Set from Nyra”.",
+     "who": "Anyone who can set team targets on the Analytics side",
+     "note": "Quarters follow your financial year. Numbers you don't mention keep their current value. Refuses periods that have ended. Can't be undone from chat. Up to 20 teams at once."
+    }
+   ]
+  },
+  {
+   "id": "clients",
+   "n": "08",
+   "title": "Clients",
+   "text": "Keep client context current from the chat.",
+   "cards": [
+    {
+     "title": "Add a note on a client",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Adds a note to the client's Notes section.",
+     "prompts": [
+      "“Add a note on Amazon: budget approved”",
+      "“Note on Flipkart: new hiring manager from January”"
+     ],
+     "happens": "Preview then Confirm. Undo for 30 s.",
+     "who": "Anyone who can view clients",
+     "note": ""
+    },
+    {
+     "title": "Show a client's notes",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Reads back the notes on a client.",
+     "prompts": [
+      "“Show notes for Amazon”",
+      "“Any notes on Flipkart?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view clients",
+     "note": ""
+    },
+    {
+     "title": "Add a client contact",
+     "tag": "Action",
+     "hook": "",
+     "desc": "Adds a contact (SPOC) to a client at one of its locations.",
+     "prompts": [
+      "“Add Rahul Sharma (rahul@amazon.com) as a contact for Amazon”"
+     ],
+     "happens": "Preview then Confirm. Undo for 30 s, unless a job already uses the contact.",
+     "who": "Anyone who can view clients",
+     "note": "Refuses an email already used by another contact."
+    },
+    {
+     "title": "Create a client",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Opens the new-client form.",
+     "prompts": [
+      "“Create client ABC”",
+      "“Add a client”",
+      "“Naya client banao”"
+     ],
+     "happens": "Deep link to the client form.",
+     "who": "Anyone who can view clients",
+     "note": "Opens the form. It isn't pre-filled."
+    }
+   ]
+  },
+  {
+   "id": "reports",
+   "n": "09",
+   "title": "Reports and metrics",
+   "text": "Every number your managers ask for, instantly, with a link to the page behind it.",
+   "cards": [
+    {
+     "title": "Pipeline volumes",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Submissions, selections, offers, interviews scheduled and conducted, and feedback owed, for any time window - including absolute dates (nov 11), weekdays (this Wednesday) and day ranges (between today and Friday, Nov 11 and 12).",
+     "prompts": [
+      "“How many submissions this month?”",
+      "“How many selections last quarter?”",
+      "“How many interviews scheduled for nov 11?”",
+      "“between today and Friday”"
+     ],
+     "happens": "Answer card. Tap through to the filtered page. The reply names the date or range you asked for.",
+     "who": "Anyone who can view that page (tracker, roster, closures)",
+     "note": ""
+    },
+    {
+     "title": "Closures, closure rate and best week",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Closures for any period, client or job; closure rate against target; your best week for closures over the last 8 weeks.",
+     "prompts": [
+      "“Closures in the last 6 months”",
+      "“What's my closure rate?”",
+      "“Closures for Acme”",
+      "“Which was my best week for closures?”"
+     ],
+     "happens": "Answer card linking to Closures.",
+     "who": "Anyone who can view closures",
+     "note": ""
+    },
+    {
+     "title": "Targets and revenue",
+     "tag": "Answer",
+     "hook": "Revenue and targets on demand. No dashboard digging.",
+     "desc": "Hire targets vs achieved, revenue target for the period, and revenue achieved (the same figures as Analytics).",
+     "prompts": [
+      "“What's my target vs achieved?”",
+      "“What's my revenue target this quarter?”",
+      "“How much revenue have we closed this month?”",
+      "“Mera revenue kitna hua”"
+     ],
+     "happens": "Answer card linking to Analytics.",
+     "who": "Targets: Anyone who can view closures. Revenue: Anyone who can view analytics",
+     "note": ""
+    },
+    {
+     "title": "Funnel for a client or job",
+     "tag": "Answer",
+     "hook": "See exactly where candidates drop off.",
+     "desc": "Shows how many candidates reached each stage, from submitted to joined.",
+     "prompts": [
+      "“Acme funnel this quarter”",
+      "“Funnel for JC-2041”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    },
+    {
+     "title": "Average time to fill",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Median days from opening a job to filling it, for the period you ask.",
+     "prompts": [
+      "“Average time to fill this quarter”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view closures",
+     "note": ""
+    },
+    {
+     "title": "Top drop and rejection reasons",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Ranks the most common reasons candidates were rejected or dropped.",
+     "prompts": [
+      "“Top drop reasons”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can work the candidate tracker",
+     "note": "Only as good as the reasons recorded in feedback."
+    },
+    {
+     "title": "Best performing clients",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Ranks clients by closures.",
+     "prompts": [
+      "“Best performing clients”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view closures",
+     "note": ""
+    },
+    {
+     "title": "AI searches run by the team",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Counts the AI searches you or your team ran.",
+     "prompts": [
+      "“How many AI searches did my team run?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view analytics",
+     "note": ""
+    },
+    {
+     "title": "Scorecard and leaderboard",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Opens your performance scorecard and the team leaderboard.",
+     "prompts": [
+      "“Open my scorecard”",
+      "“Show leaderboard”"
+     ],
+     "happens": "Answer card with a link.",
+     "who": "Anyone who can view analytics",
+     "note": ""
+    },
+    {
+     "title": "Compare with last period; me vs my team",
+     "tag": "Answer",
+     "hook": "Instant trend lines: up or down vs last month.",
+     "desc": "Puts any number next to the previous period, and switches between your own numbers and your team's.",
+     "prompts": [
+      "“Closures vs last month”",
+      "“My team's interviews this week”"
+     ],
+     "happens": "Answer card with the change shown.",
+     "who": "As for the metric",
+     "note": "Team numbers cover the people you can see."
+    },
+    {
+     "title": "How is this number worked out?",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Explains how a metric is calculated.",
+     "prompts": [
+      "“How is closure rate worked out?”",
+      "“What does feedback owed mean?”"
+     ],
+     "happens": "Short definition.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Email me a report",
+     "tag": "Action",
+     "hook": "A report in your inbox, on request.",
+     "desc": "Emails you the report you ask for, for example the Closures list for a period as an Excel file with the same rows you see on the Closures page.",
+     "prompts": [
+      "“Send me this month's closures as Excel”",
+      "“Email me last month's closures report”",
+      "“Mail me the closures for this quarter as a spreadsheet”"
+     ],
+     "happens": "Preview then tap Confirm. Email with the .xlsx to your own address.",
+     "who": "Anyone who can view closures",
+     "note": "Goes only to you."
+    },
+    {
+     "title": "Open any report page",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Opens the requirement report, client performance report, dashboard or AI usage page.",
+     "prompts": [
+      "“Open requirement report”",
+      "“Client performance report”",
+      "“Take me to dashboard”",
+      "“How much AI credit do we have left?”"
+     ],
+     "happens": "Deep link to the page.",
+     "who": "Analytics viewers. AI usage: workspace admins.",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "team",
+   "n": "10",
+   "title": "Team",
+   "text": "Balance the load and hand over work cleanly.",
+   "cards": [
+    {
+     "title": "Recruiter load",
+     "tag": "Answer",
+     "hook": "See who's stretched before deadlines slip.",
+     "desc": "Shows how many open jobs and active candidates a recruiter has, compared with the team median.",
+     "prompts": [
+      "“Is Rohit overloaded?”"
+     ],
+     "happens": "Answer card.",
+     "who": "Anyone who can view goals",
+     "note": ""
+    },
+    {
+     "title": "Reassign a leaver's jobs and candidates",
+     "tag": "Action",
+     "hook": "Someone leaving? Move their whole portfolio to a colleague in one confirmed step.",
+     "desc": "Moves a person's jobs, candidates and open goals (and optionally their closure credit) to a colleague, exactly as the Users screen does.",
+     "prompts": [
+      "“Move Priya's jobs and candidates to Ravi”",
+      "“Reassign ownership from Priya to Ravi”",
+      "“Priya is leaving, move her work to Ravi”"
+     ],
+     "happens": "Preview with counts then tap Confirm. The app records the transfer history.",
+     "who": "Workspace admins only",
+     "note": "Can't be undone from chat. Confirm refuses if the counts changed after the preview. The successor must be an active employee, not a collaborator."
+    },
+    {
+     "title": "Employees and permissions pages",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Opens the employee list, the add-employee form or Permissions, and explains how permission groups work.",
+     "prompts": [
+      "“Add an employee”",
+      "“Open permissions”",
+      "“Give Priya scheduler access”"
+     ],
+     "happens": "Deep link with short steps.",
+     "who": "Team viewers. Permissions: workspace admins.",
+     "note": "Nyra explains permissions but doesn't change them."
+    }
+   ]
+  },
+  {
+   "id": "network",
+   "n": "11",
+   "title": "Network sourcing",
+   "text": "Reach network opportunities and reviews from the chat.",
+   "cards": [
+    {
+     "title": "Network Opportunities and pending reviews",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Opens Network Opportunities on the requests or reviews tab, and tells you where approvals happen.",
+     "prompts": [
+      "“Show network opportunities”",
+      "“Any new network requests?”",
+      "“What network reviews are waiting?”"
+     ],
+     "happens": "Deep link to the right tab.",
+     "who": "Anyone with Network Opportunities access",
+     "note": "Approvals and sharing happen on the page. Nyra doesn't approve or share for you yet."
+    },
+    {
+     "title": "How network sourcing works",
+     "tag": "Answer",
+     "hook": "",
+     "desc": "Explains Network Opportunities from the Knowledge Center.",
+     "prompts": [
+      "“How does network sourcing work?”",
+      "“What is Network Opportunities?”",
+      "“How do I review network requests?”"
+     ],
+     "happens": "Answer from the Knowledge Center.",
+     "who": "Anyone with Network Opportunities access",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "help",
+   "n": "12",
+   "title": "Guided help",
+   "text": "Onboarding on autopilot: tours, step-by-step walkthroughs and instant answers.",
+   "cards": [
+    {
+     "title": "Page tours",
+     "tag": "",
+     "hook": "New user? Nyra gives a guided tour of any screen.",
+     "desc": "Spotlight tours of the main screens: dashboard, requirement list, create requirement, Search with Nyra, Global Search, candidate list / Tagged Search, candidate profile, Interview Roster, Scheduler, goals, closures, clients, reports, employees, permissions, settings, Import Center, Nyra Conversations, Network Opportunities and the Nyra panel itself.",
+     "prompts": [
+      "“Tour the dashboard”",
+      "“Walk me through Import Center”",
+      "“Show me Nyra Conversations”",
+      "“Tour Tagged Search”"
+     ],
+     "happens": "Opens the page and runs the tour (Show me button).",
+     "who": "Anyone who can open that page",
+     "note": ""
+    },
+    {
+     "title": "Step-by-step walkthroughs",
+     "tag": "",
+     "hook": "Nyra coaches you through a real hire, page by page, and does the steps with you.",
+     "desc": "Multi-page walkthroughs that coach you and can do each step with you: hire someone end to end (find, shortlist, schedule), clear the feedback you owe, create a job and source, offer to joining, and set up a client.",
+     "prompts": [
+      "“Walk me through hiring someone”",
+      "“Create a job and source candidates”",
+      "“Walk me through offer to joining”",
+      "“Show me how to set up a client”"
+     ],
+     "happens": "A walkthrough bar guides you across pages.",
+     "who": "Hiring / jobthensource: Anyone who can search candidates. Feedback: Anyone who can view the Interview Roster. Client setup: Anyone who can view clients",
+     "note": ""
+    },
+    {
+     "title": "Knowledge Center answers",
+     "tag": "",
+     "hook": "Product questions answered on the spot, with a link to the guide.",
+     "desc": "Answers how-to and what-is questions from the EzRecruit Knowledge Center: creating requirements, searching, the roster, closures, analytics, reports, Import Center, adding teammates, first login and more.",
+     "prompts": [
+      "“How do I create a requirement?”",
+      "“Tagged Search or Search with Nyra?”",
+      "“How do I import from another ATS?”",
+      "“I've just logged in. What first?”"
+     ],
+     "happens": "Short answer with a link to the Knowledge Center page.",
+     "who": "Everyone who has Nyra",
+     "note": "Some how-to topics (Tagged Search, scheduling an interview, goals) give shorter answers than others."
+    },
+    {
+     "title": "Straight answers to “why” questions",
+     "tag": "",
+     "hook": "",
+     "desc": "Clear answers to common puzzles: why a search found nothing, why the pipeline isn't moving, why you can't accept a goal, closure vs offer vs selection, whether you must type every candidate, renaming “recruiter”.",
+     "prompts": [
+      "“Why did I get no results?”",
+      "“Nobody is moving in my pipeline”",
+      "“What's a closure?”",
+      "“We don't call them recruiters”"
+     ],
+     "happens": "Curated answer.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Jump to any page",
+     "tag": "",
+     "hook": "Say where you want to go. Nyra takes you there.",
+     "desc": "Opens pages by name: notifications, settings, masters, onboarding, profile and password, candidate list, a job's tracker or scheduler, scheduler history, goals overview, team targets, feedback master and more.",
+     "prompts": [
+      "“Open notifications”",
+      "“Take me to settings”",
+      "“Open the scheduler for JC-1”",
+      "“Change my password”"
+     ],
+     "happens": "Deep link, permission-checked.",
+     "who": "Anyone who can open that page",
+     "note": "Nyra never handles passwords: it opens the page."
+    }
+   ]
+  },
+  {
+   "id": "trust",
+   "n": "13",
+   "title": "Safety and trust",
+   "text": "Built for real recruitment data: nothing changes without your say-so.",
+   "cards": [
+    {
+     "title": "Preview and Confirm before every change",
+     "tag": "",
+     "hook": "Nyra never acts behind your back. Every change is previewed first.",
+     "desc": "Every write shows a preview card (what, who, and who will be notified) with Confirm, Change and Cancel. Anything that sends a message outside the company needs a tap on Confirm.",
+     "prompts": [
+      "(any action)"
+     ],
+     "happens": "Nothing is written until you confirm.",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "30-second undo",
+     "tag": "",
+     "hook": "Changed your mind? Undo.",
+     "desc": "Most reversible changes can be undone for 30 seconds: shortlist, stage moves, notes, reject (without email), cancel and no-show, job hold or reopen, panel, client notes and contacts, search alerts and reminders.",
+     "prompts": [
+      "“Undo”"
+     ],
+     "happens": "The change is reversed.",
+     "who": "Everyone who has Nyra",
+     "note": "Not for emails that have gone out, job close, new jobs or candidates, or ownership transfer."
+    },
+    {
+     "title": "Sees only what you can see",
+     "tag": "",
+     "hook": "Nyra respects every permission and hierarchy rule you already have.",
+     "desc": "Every answer and action uses your own permissions and team scope. Help only offers what you're allowed to do.",
+     "prompts": [
+      "(automatic)"
+     ],
+     "happens": "",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "No double actions, no stale taps",
+     "tag": "",
+     "hook": "",
+     "desc": "Tapping Confirm twice never writes twice. A preview left too long or overtaken by other questions expires safely.",
+     "prompts": [
+      "(automatic)"
+     ],
+     "happens": "",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Safe email",
+     "tag": "",
+     "hook": "",
+     "desc": "Candidate emails go only to the address on the candidate's record, and suppressed or bouncing addresses are skipped. Rejection and cancellation reasons never appear in candidate emails.",
+     "prompts": [
+      "(automatic)"
+     ],
+     "happens": "",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Instant off switch",
+     "tag": "",
+     "hook": "",
+     "desc": "EzRecruit can pause any single action, or all actions, at once without a release.",
+     "prompts": [
+      "(admin control)"
+     ],
+     "happens": "",
+     "who": "EzRecruit operations",
+     "note": ""
+    },
+    {
+     "title": "Fast answers from your own data",
+     "tag": "",
+     "hook": "Answers come straight from your EzRecruit data, so they're fast and consistent.",
+     "desc": "Numbers, job and candidate answers are read directly from your EzRecruit data with fixed rules, not made up by an AI model. Nyra also remembers how it understood earlier questions, so repeat questions come back faster.",
+     "prompts": [
+      "(automatic)"
+     ],
+     "happens": "",
+     "who": "Everyone who has Nyra",
+     "note": ""
+    },
+    {
+     "title": "Honest when it can't help",
+     "tag": "",
+     "hook": "",
+     "desc": "When something is outside what Nyra can do, it says so plainly and offers what it can do. In production these gaps (plus unknowns, action failures and thumbs-down) also open or bump a Backlog card marked [Nyra auto] for the product team.",
+     "prompts": [
+      "(anything outside the list)",
+      "“sync my calendar with outlook”"
+     ],
+     "happens": "Honest reply plus suggestions; a Backlog card is filed or counted in production.",
+     "who": "Everyone who has Nyra",
+     "note": "Backlog intake is production-only (flag NYRA_BACKLOG_INTAKE_ENABLED). UAT never creates tickets."
+    },
+    {
+     "title": "Full audit trail",
+     "tag": "",
+     "hook": "",
+     "desc": "Every action Nyra takes is logged with who asked, what changed and when.",
+     "prompts": [
+      "(automatic)"
+     ],
+     "happens": "",
+     "who": "Admins / EzRecruit",
+     "note": ""
+    },
+    {
+     "title": "Faster resume re-reads (content cache)",
+     "tag": "",
+     "hook": "",
+     "desc": "Parsed resume content is cached by content hash (resume_content_cache). A second upload of the same file returns instantly instead of re-parsing, and missing-table errors on US tenants are gone.",
+     "prompts": [
+      "(automatic on resume upload / re-upload)"
+     ],
+     "happens": "",
+     "who": "Anyone who can work the candidate tracker",
+     "note": ""
+    }
+   ]
+  }
+ ],
+ "cant": [
+  {
+   "cant": "See Outlook or Google calendars",
+   "instead": "Free slots come from the EzRecruit interview calendar only. Asking to sync Outlook or Google files a production Backlog card for the team; Nyra still won't read those calendars today."
+  },
+  {
+   "cant": "Block personal time on your calendar",
+   "instead": "“Just block this time” sends you to the Schedule page."
+  },
+  {
+   "cant": "Book an interview less than an hour ahead",
+   "instead": "Nyra needs at least one hour's notice."
+  },
+  {
+   "cant": "Send a weekly summary email",
+   "instead": "Built, but not switched on in production yet. There is no daily digest email."
+  },
+  {
+   "cant": "Approve, share or source on the network from chat",
+   "instead": "Network sourcing through Nyra is planned for later. Today Nyra opens the right Network Opportunities tab."
+  },
+  {
+   "cant": "Merge duplicate candidates",
+   "instead": "Nyra finds duplicates, but merging isn't offered."
+  },
+  {
+   "cant": "Send bulk email campaigns",
+   "instead": "Out of scope. Nyra emails one candidate or one client contact at a time."
+  },
+  {
+   "cant": "Send free-text WhatsApp messages",
+   "instead": "Follow-ups, thank-yous and regrets go by email. WhatsApp is used only for slot links and interview reminders."
+  },
+  {
+   "cant": "Export other reports to Excel",
+   "instead": "Only the Closures report can be emailed as Excel."
+  },
+  {
+   "cant": "Change permissions, masters or settings",
+   "instead": "Nyra explains them and opens the page; changes are made on the page."
+  },
+  {
+   "cant": "Pre-fill the new-client form",
+   "instead": "Nyra opens the form; you fill it in."
+  },
+  {
+   "cant": "Filter reliably by gender or industry",
+   "instead": "These filters are read, but results vary."
+  },
+  {
+   "cant": "Assign a job by title alone, every time",
+   "instead": "Using the job code is reliable; by title, Nyra may ask which job."
+  }
+ ]
+}

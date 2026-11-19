@@ -1,0 +1,314 @@
+[
+  {
+    "path": "/ats-for-recruitment-agencies/",
+    "og": "ats-for-recruitment-agencies",
+    "crumb": "ATS for recruitment agencies",
+    "metaTitle": "ATS for Recruitment Agencies | EZRecruit",
+    "description": "EZRecruit is the ATS built for recruitment and staffing agencies: jobs, your own candidate database, client trackers, interviews, closures and Nyra, the AI assistant.",
+    "h1": "The ATS built for recruitment agencies.",
+    "intro": "Agencies handle many clients and roles at once. EZRecruit keeps every job, candidate, client update and closure in one place, with Nyra to do the routine work.",
+    "blocks": [
+      {
+        "h": "Made for agencies, not corporate HR",
+        "p": "Agencies work on many clients at once and send shortlists to each of them. EZRecruit follows that way of working: one pipeline from the client's brief to the joining date.",
+        "points": [
+          "Every agency has its own database.",
+          "Share a clean tracker with each client.",
+          "Track offers and joining dates, and see closures and revenue."
+        ]
+      },
+      {
+        "h": "Everything your agency needs",
+        "p": "Start with jobs and candidates, and add more as you grow. It all uses one database, one login and one pipeline.",
+        "points": [
+          "Requirements: paste the client's job details and Nyra writes the job description and screening questions.",
+          "Candidates: upload CVs, even in bulk, and each one is read. Repeats are found by email and phone.",
+          "Interviews: set up interviews and let candidates pick their own slot.",
+          "Closures: track offers and joining dates.",
+          "Goals: set targets for your team and track them."
+        ]
+      },
+      {
+        "h": "From new job to joining, in 3 steps",
+        "p": "Add the job and Nyra writes the job description. Nyra reads the CVs in your account and scores the best matches out of 100, with reasons. Then share a tracker with your client, set up interviews and follow offers until joining."
+      },
+      {
+        "h": "Nyra, the assistant inside",
+        "p": "Ask in English, Hindi or Hinglish. Nyra searches, schedules, shortlists and answers your numbers. She shows you every change first, and only shows what you are allowed to see.",
+        "points": [
+          "Read what Nyra can and cannot do on the Nyra page."
+        ],
+        "link": [
+          "Meet Nyra",
+          "/nyra/"
+        ]
+      }
+    ],
+    "faq": [
+      0,
+      1,
+      2,
+      5,
+      6
+    ],
+    "related": [
+      [
+        "AI candidate matching",
+        "/features/ai-candidate-matching/"
+      ],
+      [
+        "Client trackers",
+        "/features/client-trackers/"
+      ],
+      [
+        "Interview scheduling",
+        "/features/interview-scheduling/"
+      ],
+      [
+        "Import your candidates",
+        "/features/import-center/"
+      ],
+      [
+        "Pricing",
+        "/pricing/"
+      ]
+    ]
+  },
+  {
+    "path": "/features/ai-candidate-matching/",
+    "og": "ai-candidate-matching",
+    "crumb": "AI candidate matching",
+    "metaTitle": "AI Candidate Matching for Recruitment Agencies | EZRecruit",
+    "description": "Nyra reads every CV in your account and scores the best matches out of 100, with the reasons. Search in plain words, refine in conversation and save searches.",
+    "h1": "AI candidate matching that shows its reasons.",
+    "intro": "Nyra reads the CVs in your account and scores the best matches out of 100, with the reasons, so you know who to call first.",
+    "blocks": [
+      {
+        "h": "Search the way you talk",
+        "p": "Type it like you would say it, for example \"Find Java developers in Bangalore with 5+ years\". Nyra turns it into a scored search in seconds. If a request is too vague, she asks instead of guessing.",
+        "points": [
+          "Refine in conversation: \"Add Kafka\", \"Not Hyderabad\".",
+          "Find people for a job by its code.",
+          "Find more candidates like one you like.",
+          "Save a search, and get a daily alert about new matches."
+        ]
+      },
+      {
+        "h": "Scores you can explain",
+        "p": "Each candidate gets a score out of 100 with the reasons beside it. Nyra reads the CVs and job descriptions in your account to score matches and write drafts."
+      },
+      {
+        "h": "You stay in control",
+        "p": "Admins set a monthly AI budget, with limits per person and per feature, and see usage on a live dashboard. Every agency has its own database."
+      }
+    ],
+    "faq": [
+      2,
+      5
+    ],
+    "related": [
+      [
+        "Meet Nyra",
+        "/nyra/"
+      ],
+      [
+        "Import your candidates",
+        "/features/import-center/"
+      ],
+      [
+        "Client trackers",
+        "/features/client-trackers/"
+      ]
+    ]
+  },
+  {
+    "path": "/features/client-trackers/",
+    "og": "client-trackers",
+    "crumb": "Client trackers",
+    "metaTitle": "Client Trackers for Recruitment Agencies | EZRecruit",
+    "description": "Choose the columns for the tracker you send, or ask Nyra to email it to the client with the Excel file attached.",
+    "h1": "Client trackers without the messy spreadsheets.",
+    "intro": "Choose the columns for the tracker you send, and share it with your client.",
+    "blocks": [
+      {
+        "h": "Share in one line",
+        "p": "Ask Nyra to send the tracker for a job to the client. She shows you the email first, with the Excel tracker attached, and sends it when you confirm. Your mailbox needs to be connected in EZRecruit.",
+        "points": [
+          "Choose the columns for the tracker you send.",
+          "Send the shortlist with the Excel tracker attached.",
+          "Email the interview schedule to a client contact.",
+          "Every email is previewed before it goes."
+        ]
+      },
+      {
+        "h": "Keep clients up to date",
+        "p": "Candidates move through your stages as you work, and the tracker you send shows each person's current stage at the time you send it."
+      }
+    ],
+    "faq": [
+      3
+    ],
+    "related": [
+      [
+        "AI candidate matching",
+        "/features/ai-candidate-matching/"
+      ],
+      [
+        "Interview scheduling",
+        "/features/interview-scheduling/"
+      ],
+      [
+        "Meet Nyra",
+        "/nyra/"
+      ]
+    ]
+  },
+  {
+    "path": "/features/interview-scheduling/",
+    "og": "interview-scheduling",
+    "crumb": "Interview scheduling",
+    "metaTitle": "Interview Scheduling for Recruitment Agencies | EZRecruit",
+    "description": "Let candidates pick their own interview slot, and ask Nyra to book, move or cancel interviews, send reminders and chase feedback.",
+    "h1": "Interview scheduling that mostly runs itself.",
+    "intro": "Send a link and candidates pick a slot that suits them. A confirmation goes out once the booking is done.",
+    "blocks": [
+      {
+        "h": "Book, move and cancel in one line",
+        "p": "Ask Nyra to book an interview and she finds a free slot and shows you the booking before anything changes. She can also reschedule, cancel and mark a no-show.",
+        "points": [
+          "Free slots come from the EZRecruit interview calendar.",
+          "Nyra needs at least one hour's notice to book or move an interview.",
+          "She will not double-book a candidate who already has an upcoming interview."
+        ]
+      },
+      {
+        "h": "Reminders and faster feedback",
+        "p": "Candidates get a WhatsApp reminder an hour before the interview. Nyra can also nudge the interviewers who owe feedback, in one line.",
+        "points": [
+          "Send a candidate a slot link on WhatsApp.",
+          "Set the interview panel for a job.",
+          "Email interview details to a candidate.",
+          "Recruiters get a pop-up 10 to 15 minutes before an interview starts. Reminders and interview alerts also appear as pop-ups that must be dismissed."
+        ]
+      }
+    ],
+    "faq": [
+      4,
+      3
+    ],
+    "related": [
+      [
+        "Client trackers",
+        "/features/client-trackers/"
+      ],
+      [
+        "Meet Nyra",
+        "/nyra/"
+      ],
+      [
+        "Book a demo",
+        "/demo/"
+      ]
+    ]
+  },
+  {
+    "path": "/features/import-center/",
+    "og": "import-center",
+    "crumb": "Import your candidates",
+    "metaTitle": "Import Your Candidates and CVs | EZRecruit",
+    "description": "The Import Center brings your candidate database and CVs into EZRecruit, with live progress, a report at the end and an undo. Most teams are ready in a few days.",
+    "h1": "Bring your candidates with you.",
+    "intro": "You do not start from zero. The Import Center brings in your candidate database and CVs.",
+    "blocks": [
+      {
+        "h": "Import with confidence",
+        "p": "You see live progress while it runs, get a report at the end and can undo the import. Your account manager turns it on for you.",
+        "points": [
+          "Bring in your candidate database and CVs.",
+          "Watch progress live.",
+          "Get a report when it finishes.",
+          "Undo the import if you need to."
+        ]
+      },
+      {
+        "h": "No duplicates",
+        "p": "Upload CVs, even in bulk, and each one is read. If someone is already in your database, EZRecruit spots it by email and phone."
+      },
+      {
+        "h": "Bring in your jobs too",
+        "p": "Upload a CSV to create up to 100 requirements at a time, for one client per file. A check-only mode flags any rows that would be skipped and why, and lets you download just those rows to fix and re-upload. The same import works in Nyra: attach a CSV and she asks which client, shows a preview of what she will create and waits for your confirmation."
+      },
+      {
+        "h": "Ready in a few days",
+        "p": "Most teams are ready in a few days. We help you bring your data in and train your team."
+      }
+    ],
+    "faq": [
+      1,
+      6
+    ],
+    "related": [
+      [
+        "AI candidate matching",
+        "/features/ai-candidate-matching/"
+      ],
+      [
+        "Book a demo",
+        "/demo/"
+      ],
+      [
+        "Pricing",
+        "/pricing/"
+      ]
+    ]
+  },
+  {
+    "path": "/pricing/",
+    "og": "pricing",
+    "crumb": "Pricing",
+    "metaTitle": "EZRecruit Pricing | ATS for Recruitment Agencies",
+    "description": "EZRecruit pricing depends on your team size and the modules you use. Book a demo and we will send you a quote.",
+    "h1": "Pricing that fits your team.",
+    "intro": "The price depends on your team size and the modules you use. Book a demo and we will send you a quote.",
+    "blocks": [
+      {
+        "h": "What decides the price",
+        "p": "Two things.",
+        "points": [
+          "The size of your team.",
+          "The modules you use."
+        ]
+      },
+      {
+        "h": "AI costs you control",
+        "p": "Admins set a monthly AI budget, with limits per person and per feature, and see usage on a live dashboard."
+      },
+      {
+        "h": "What the demo covers",
+        "p": "A 30-minute walkthrough on your own jobs, with help bringing your candidates in. We send the quote afterwards.",
+        "link": [
+          "Book a demo",
+          "/demo/"
+        ]
+      }
+    ],
+    "faq": [
+      7,
+      6
+    ],
+    "related": [
+      [
+        "The ATS for recruitment agencies",
+        "/ats-for-recruitment-agencies/"
+      ],
+      [
+        "Import your candidates",
+        "/features/import-center/"
+      ],
+      [
+        "Meet Nyra",
+        "/nyra/"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+# EZRecruit
+
+> EZRecruit is an ATS (applicant tracking system) and operating system for recruitment and staffing agencies. Agencies manage jobs, keep their own candidate database, share trackers with clients, schedule interviews and track closures. Nyra is the built-in AI assistant.
+
+## Key pages
+- [Home](https://ezrecruit.ai/): what EZRecruit does and who it is for
+- [Nyra, the AI assistant](https://ezrecruit.ai/nyra/): the capability guide, including what Nyra cannot do yet
+- [Book a demo](https://ezrecruit.ai/demo/): a 30-minute walkthrough on your own jobs
+- [Blog](https://ezrecruit.ai/blog/): guides for recruitment agencies
+- [What's new](https://ezrecruit.ai/updates/): product updates
+
+## Facts
+- Built for recruitment and staffing agencies that handle many clients and roles at once.
+- Every agency has its own database.
+- Nyra works in English, Hindi and Hinglish, previews every change before it happens, and only shows what a user is allowed to see.
+- Pricing depends on team size and modules. Book a demo for a quote.
+
+## Contact
+support@ezrecruit.ai
