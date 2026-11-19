@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Icon from "../Icon";
 import TextCta from "../TextCta";
 
-// Public EmailJS values from the current site, so demo requests keep landing in the same inbox.
-const EMAILJS = { url: "https://api.emailjs.com/api/v1.0/email/send", service_id: "service_t1ylhs8", template_id: "template_9czjpne", user_id: "TmHjoSDuBGdYabUGg" };
+// Demo requests go to our own AWS endpoint (API Gateway, Lambda, SES). Code and setup: infra/demo-form.
+const DEMO_API = "https://wkuewdpufb.execute-api.ap-south-1.amazonaws.com/demo";
 const SUPPORT = "support@ezrecruit.ai";
 const SIZES = ["1 to 5", "6 to 15", "16 to 50", "50+"];
 
@@ -60,17 +60,13 @@ export default function DemoForm() {
     // Bots fill the hidden field; show them success and send nothing.
     if (d.fax) return setState("sent");
     setState("sending");
-    const { name, email, company } = d;
-    const message = [d.message, size && `Recruiting team size: ${size}`].filter(Boolean).join("\n\n");
+    const { name, email, company, message } = d;
     setSummary({ Name: name, Email: email, Company: company, ...(size && { "Team size": size }) });
     try {
-      const res = await fetch(EMAILJS.url, {
+      const res = await fetch(DEMO_API, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          service_id: EMAILJS.service_id, template_id: EMAILJS.template_id, user_id: EMAILJS.user_id,
-          template_params: { name, email, phone: "", designation: "", company, company_website: "", message, title: `Demo Request - ${company}` },
-        }),
+        body: JSON.stringify({ name, email, company, size, message, page: location.pathname }),
       });
       setState(res.ok ? "sent" : "error");
     } catch {
