@@ -11,9 +11,7 @@ const LINKEDIN = "https://www.linkedin.com/company/deeptalent-technologies/";
 const COLUMNS = [
   { title: "Product", links: [
     { label: "Platform", href: "#platform" }, { label: "Nyra AI", href: "/nyra/" },
-    { label: "ATS for agencies", href: "/ats-for-recruitment-agencies/" }, { label: "Candidate matching", href: "/features/ai-candidate-matching/" },
-    { label: "Client trackers", href: "/features/client-trackers/" }, { label: "Interview scheduling", href: "/features/interview-scheduling/" },
-    { label: "Import candidates", href: "/features/import-center/" }, { label: "Pricing", href: "/pricing/" }] },
+    { label: "ATS for agencies", href: "/ats-for-recruitment-agencies/" }, { label: "Pricing", href: "/pricing/" }] },
   { title: "Resources", links: [
     { label: "Blog", href: "/blog/" }, { label: "What's new", href: "/updates/" }, { label: "FAQ", href: "#faq" }] },
   { title: "Company", links: [
