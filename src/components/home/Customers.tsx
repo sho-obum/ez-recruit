@@ -4,9 +4,9 @@ import ScrollWords from "./CustomersWords";
 const CASE_STUDY = "https://ezrecruit.ai/blog/case-study-the-glove-how-the-glove-got-an-hour-back-per-recruiter-every-day/";
 
 // placeholder: true cards are stand-ins for sales to replace; each shows a dashed chip so they cannot ship unnoticed.
-type Quote = { quote: string; name: string; role?: string; company?: string; tone: string; link?: string; placeholder?: boolean };
+type Quote = { quote: string; name: string; role?: string; company?: string; tone: string; link?: string; placeholder?: boolean; logo?: string };
 const QUOTES: Quote[] = [
-  { quote: "We got an hour back per recruiter, every day.", name: "The Glove", tone: "bg-blue text-white", link: CASE_STUDY },
+  { quote: "We got an hour back per recruiter, every day.", name: "The Glove", tone: "bg-blue text-white", link: CASE_STUDY, logo: "/logos/theglove.png" },
   { quote: "Client trackers used to take our whole Friday afternoon. Now we send them the same day.", name: "Priya Nair", role: "Founder", company: "Northbridge Talent", tone: "bg-[#bfe3ff]", placeholder: true },
   { quote: "Every job comes in the same format, so new recruiters can start on day one.", name: "Daniel Ross", role: "Head of Delivery", company: "Keystone Staffing", tone: "bg-[#c9dcff]", placeholder: true },
   { quote: "Nyra's match scores mean we call the right five people first.", name: "Ananya Rao", role: "Team Lead", company: "Brightpath Search", tone: "bg-[#c9ebff]", placeholder: true },
@@ -49,7 +49,9 @@ function Card({ q }: { q: Quote }) {
         <p className="line-clamp-3 text-[15px] leading-[22.5px] tracking-[-0.075px] md:text-base md:leading-6 md:tracking-[-0.08px]">{q.quote}</p>
       </div>
       <div className="flex items-center gap-3">
-        <span aria-hidden="true" className={`grid size-10 flex-none place-items-center rounded-full text-sm font-semibold tracking-[-0.3px] ${q.tone}`}>{initials(q.name)}</span>
+        {q.logo
+          ? <img src={q.logo} alt="" aria-hidden="true" className="h-8 w-auto flex-none" />
+          : <span aria-hidden="true" className={`grid size-10 flex-none place-items-center rounded-full text-sm font-semibold tracking-[-0.3px] ${q.tone}`}>{initials(q.name)}</span>}
         <div className="flex min-w-0 flex-col gap-px">
           <p className="text-sm leading-[18.2px] font-medium tracking-[-0.14px]">{q.name}</p>
           {q.link ? (
