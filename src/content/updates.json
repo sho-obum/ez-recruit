@@ -1,377 +1,436 @@
 [
- {
-  "slug": "2026-11-09-edition-06",
-  "date": "2026-11-09",
-  "n": "06",
-  "title": "Interview invites that arrive, and figures that fit you",
-  "summary": "This fortnight is about trust in the basics. WhatsApp interview invites are more dependable and tell you when one didn't land. Everyone now sees the company's own currency and time zone. Offer errors are clearer.",
-  "spotlight": {
-   "title": "WhatsApp interview invites that reliably arrive, or tell you why not",
-   "body": "Interview slot links sent over WhatsApp now go out reliably, even when the job has no job description attached. If a message can't be delivered, the Scheduler tells you who missed it and why. The slot stays held, so you can resend it in one step instead of assuming the candidate got it.",
-   "for": "For recruiters"
+  {
+    "slug": "2026-11-23-edition-07",
+    "date": "2026-11-23",
+    "n": "07",
+    "title": "Nyra now does the first round of recruiting",
+    "summary": "Nyra finds, contacts, screens and shortlists candidates for every requirement you switch her on for, and can book the first call. Scheduling and trackers also got easier.",
+    "spotlight": {
+      "title": "Auto-screening: Nyra does the first round",
+      "body": "For every requirement you switch her on for, Nyra finds matching candidates in your own resource pool, reaches out, asks the right questions, re-scores them on what they said and hands your recruiters a short list of people who are interested, qualified and ready to talk. It is off until you switch it on for a requirement, and Nyra starts about 30 minutes later. Email is the first channel; WhatsApp will follow.",
+      "for": "For recruiters"
+    },
+    "groups": [
+      {
+        "label": "New",
+        "items": [
+          {
+            "title": "Nyra Screened tab, built for decisions",
+            "body": "Candidates who answered, best first, with their answers one click away. Screen in a “Needs review” candidate with one click or decline with a reason, ask Nyra to screen more, give thumbs up or down, preview resumes and export to CSV.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Nyra books the first discussion",
+            "body": "Turn on auto-schedule and a screened-in candidate gets free slots from the recruiter's working hours. They pick one and it is booked, with calendar invites for both sides that update if the interview moves. No double-booking across jobs.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Screened-in column on the requirement list",
+            "body": "A new column next to Nyra Matches shows how many candidates are ready for each job.",
+            "for": "For team leads"
+          }
+        ]
+      },
+      {
+        "label": "Improved",
+        "items": [
+          {
+            "title": "Schedule smarter",
+            "body": "Offer candidates up to 7 dates with several slots each, in one invite. If nobody new was invited you no longer see a “Scheduled!” toast, and the selection clears itself once you are done.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Trackers that just work",
+            "body": "Send trackers for several jobs to the same client contact in one email, with one sheet per job. Job Code comes first, then the fields in the contact's saved order. Last Working Day shows on screen and in Excel. If a resume is missing you are told whose, and candidates are unselected after you send.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Evaluation questions reset their expected answer",
+            "body": "Reword a default question (Experience, Notice Period, Expected CTC) and its expected answer resets on the spot, so you can set one that fits.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "The Selected tile counts by selection date",
+            "body": "It now takes you straight to the matching Closures.",
+            "for": "For everyone"
+          }
+        ]
+      }
+    ]
   },
-  "groups": [
-   {
-    "label": "Fixed",
-    "items": [
-     {
-      "title": "Your company's currency and time zone, for every team member",
-      "body": "Team members without admin access could see amounts in rupees and times in their browser's zone on forms like candidates, clients, requirements and feedback. Everyone who signs in now sees the company's own currency, time zone and country code. Figures and interview times read correctly for the whole team.",
-      "for": "For everyone"
-     },
-     {
-      "title": "A clear message when an offer CTC isn't valid",
-      "body": "If an offer's CTC is entered in a way that isn't valid, you now get a plain message asking you to correct it. Before, you could hit a generic error with no hint about what went wrong. Fixing the figure and moving on is now quicker.",
+  {
+    "slug": "2026-11-09-edition-06",
+    "date": "2026-11-09",
+    "n": "06",
+    "title": "Interview invites that arrive, and figures that fit you",
+    "summary": "This fortnight is about trust in the basics. WhatsApp interview invites are more dependable and tell you when one didn't land. Everyone now sees the company's own currency and time zone. Offer errors are clearer.",
+    "spotlight": {
+      "title": "WhatsApp interview invites that reliably arrive, or tell you why not",
+      "body": "Interview slot links sent over WhatsApp now go out reliably, even when the job has no job description attached. If a message can't be delivered, the Scheduler tells you who missed it and why. The slot stays held, so you can resend it in one step instead of assuming the candidate got it.",
       "for": "For recruiters"
-     }
+    },
+    "groups": [
+      {
+        "label": "Fixed",
+        "items": [
+          {
+            "title": "Your company's currency and time zone, for every team member",
+            "body": "Team members without admin access could see amounts in rupees and times in their browser's zone on forms like candidates, clients, requirements and feedback. Everyone who signs in now sees the company's own currency, time zone and country code. Figures and interview times read correctly for the whole team.",
+            "for": "For everyone"
+          },
+          {
+            "title": "A clear message when an offer CTC isn't valid",
+            "body": "If an offer's CTC is entered in a way that isn't valid, you now get a plain message asking you to correct it. Before, you could hit a generic error with no hint about what went wrong. Fixing the figure and moving on is now quicker.",
+            "for": "For recruiters"
+          }
+        ]
+      }
     ]
-   }
-  ]
- },
- {
-  "slug": "2026-10-26-edition-05",
-  "date": "2026-10-26",
-  "n": "05",
-  "title": "Know who to call first. Every single time.",
-  "summary": "Nyra, your recruitment assistant, got a lot smarter. Every recommended and tagged candidate now has a match score you can read, Nyra drafts your job descriptions and screening questions, and it starts your day with what needs you.",
-  "spotlight": {
-   "title": "A match score on every recommended and tagged candidate",
-   "body": "Nyra checks every candidate against your must-haves and the full job description and gives each one a clear score out of 100. Open any score to see why: what the candidate has against what the role needs, and where each answer came from. Similar skills earn credit too, and one click refreshes a score, or every score on a role.",
-   "for": "For recruiters"
   },
-  "groups": [
-   {
-    "label": "New",
-    "items": [
-     {
-      "title": "Drop in the client's brief, get a polished job description",
-      "body": "Attach the brief your client sent, add a job title and click Generate with Nyra. Your form always wins, Nyra tells you wherever the brief disagrees, and salary never appears in the published text.",
+  {
+    "slug": "2026-10-26-edition-05",
+    "date": "2026-10-26",
+    "n": "05",
+    "title": "Know who to call first. Every single time.",
+    "summary": "Nyra, your recruitment assistant, got a lot smarter. Every recommended and tagged candidate now has a match score you can read, Nyra drafts your job descriptions and screening questions, and it starts your day with what needs you.",
+    "spotlight": {
+      "title": "A match score on every recommended and tagged candidate",
+      "body": "Nyra checks every candidate against your must-haves and the full job description and gives each one a clear score out of 100. Open any score to see why: what the candidate has against what the role needs, and where each answer came from. Similar skills earn credit too, and one click refreshes a score, or every score on a role.",
       "for": "For recruiters"
-     },
-     {
-      "title": "Screening questions, drafted for you",
-      "body": "Nyra reads the job description and suggests the screening questions and must-have skills that matter for the role. Keep the ones you like, add your own, and answers are filled in from the CV when you tag a candidate.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Your daily briefing from Nyra",
-      "body": "Click the Nyra button on any page to see your day at a glance: fresh strong matches, interviews waiting on your feedback and today's interviews. Need someone new? Just describe who you're looking for in your own words.",
-      "for": "For everyone"
-     },
-     {
-      "title": "A cleaner, calmer EzRecruit",
-      "body": "Every screen now looks and works the same way. Messages tell you in plain words what happened and what to do next, and your filters live in the page link, so you can bookmark a view or share it with a colleague.",
-      "for": "For everyone"
-     },
-     {
-      "title": "No more duplicate candidates",
-      "body": "Adding a candidate whose email or phone number is already on file is stopped with a pointer to the existing profile. One person, one record.",
-      "for": "For admins"
-     }
+    },
+    "groups": [
+      {
+        "label": "New",
+        "items": [
+          {
+            "title": "Drop in the client's brief, get a polished job description",
+            "body": "Attach the brief your client sent, add a job title and click Generate with Nyra. Your form always wins, Nyra tells you wherever the brief disagrees, and salary never appears in the published text.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Screening questions, drafted for you",
+            "body": "Nyra reads the job description and suggests the screening questions and must-have skills that matter for the role. Keep the ones you like, add your own, and answers are filled in from the CV when you tag a candidate.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Your daily briefing from Nyra",
+            "body": "Click the Nyra button on any page to see your day at a glance: fresh strong matches, interviews waiting on your feedback and today's interviews. Need someone new? Just describe who you're looking for in your own words.",
+            "for": "For everyone"
+          },
+          {
+            "title": "A cleaner, calmer EzRecruit",
+            "body": "Every screen now looks and works the same way. Messages tell you in plain words what happened and what to do next, and your filters live in the page link, so you can bookmark a view or share it with a colleague.",
+            "for": "For everyone"
+          },
+          {
+            "title": "No more duplicate candidates",
+            "body": "Adding a candidate whose email or phone number is already on file is stopped with a pointer to the existing profile. One person, one record.",
+            "for": "For admins"
+          }
+        ]
+      },
+      {
+        "label": "Improved",
+        "items": [
+          {
+            "title": "Sort and filter at a glance",
+            "body": "Column controls on every table are always visible now, and filters on Tracker, Reports and Requirements apply the first time you set them.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Smarter forms",
+            "body": "Required fields are clearly marked, mistakes are flagged right where they happen, and keyboard focus is easy to see everywhere.",
+            "for": "For everyone"
+          },
+          {
+            "title": "Today's Assignment works again, with Nyra built in",
+            "body": "The dashboard's Today's Assignment grid loads properly, and you can open Nyra matches and candidate responses straight from it.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Requirement import understands your cities and contacts",
+            "body": "Bulk-importing requirements now matches city names and client contact names to the ones already in your account.",
+            "for": "For admins"
+          },
+          {
+            "title": "Goals keep themselves tidy",
+            "body": "Goals can no longer be backdated, and they complete on their own when their target is met.",
+            "for": "For recruiters"
+          }
+        ]
+      }
     ]
-   },
-   {
-    "label": "Improved",
-    "items": [
-     {
-      "title": "Sort and filter at a glance",
-      "body": "Column controls on every table are always visible now, and filters on Tracker, Reports and Requirements apply the first time you set them.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Smarter forms",
-      "body": "Required fields are clearly marked, mistakes are flagged right where they happen, and keyboard focus is easy to see everywhere.",
-      "for": "For everyone"
-     },
-     {
-      "title": "Today's Assignment works again, with Nyra built in",
-      "body": "The dashboard's Today's Assignment grid loads properly, and you can open Nyra matches and candidate responses straight from it.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Requirement import understands your cities and contacts",
-      "body": "Bulk-importing requirements now matches city names and client contact names to the ones already in your account.",
-      "for": "For admins"
-     },
-     {
-      "title": "Goals keep themselves tidy",
-      "body": "Goals can no longer be backdated, and they complete on their own when their target is met.",
-      "for": "For recruiters"
-     }
-    ]
-   }
-  ]
- },
- {
-  "slug": "2026-10-12-edition-04",
-  "date": "2026-10-12",
-  "n": "04",
-  "title": "Recommendations, match scores and a much faster résumé reader",
-  "summary": "Every open role now gets its own list of recommended candidates, scored and ranked. Résumés are read faster, and more file types work than ever.",
-  "spotlight": {
-   "title": "Recommended candidates for every open role",
-   "body": "Each job now has a Recommended tab with the best-fit candidates from your database, ranked by match score and kept fresh through the day. Matches, Tagged and Workflow sit side by side on the job page.",
-   "for": "For recruiters"
   },
-  "groups": [
-   {
-    "label": "New",
-    "items": [
-     {
-      "title": "Match score column on Workflow and Closures",
-      "body": "See how well every candidate in your pipeline fits the role, with a score breakdown, and look back at how your hires matched.",
+  {
+    "slug": "2026-10-12-edition-04",
+    "date": "2026-10-12",
+    "n": "04",
+    "title": "Recommendations, match scores and a much faster résumé reader",
+    "summary": "Every open role now gets its own list of recommended candidates, scored and ranked. Résumés are read faster, and more file types work than ever.",
+    "spotlight": {
+      "title": "Recommended candidates for every open role",
+      "body": "Each job now has a Recommended tab with the best-fit candidates from your database, ranked by match score and kept fresh through the day. Matches, Tagged and Workflow sit side by side on the job page.",
       "for": "For recruiters"
-     },
-     {
-      "title": "Search candidates straight from a requirement",
-      "body": "A Search candidates button on the requirement view starts a search for that role in one click.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Preferred employers and notice period on requirements",
-      "body": "Capture the companies your client likes to hire from and the notice period they can accept, right on the requirement form.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Import Center",
-      "body": "Bring your existing candidate database into EzRecruit yourself, with live progress, a report at the end, and the option to retry or roll back. Ask your account manager to switch it on for your company.",
-      "for": "For admins"
-     },
-     {
-      "title": "Bulk import requirements from a spreadsheet",
-      "body": "Upload a CSV of open roles instead of creating them one by one.",
-      "for": "For admins"
-     },
-     {
-      "title": "Talent Activity you can trust",
-      "body": "A clear activity drawer with full history in your own time zone, where each candidate is counted once.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Lead and collaborator at the same time",
-      "body": "A team lead can also act as a collaborator, with a simple switch for which role you're working in.",
-      "for": "For recruiters"
-     }
+    },
+    "groups": [
+      {
+        "label": "New",
+        "items": [
+          {
+            "title": "Match score column on Workflow and Closures",
+            "body": "See how well every candidate in your pipeline fits the role, with a score breakdown, and look back at how your hires matched.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Search candidates straight from a requirement",
+            "body": "A Search candidates button on the requirement view starts a search for that role in one click.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Preferred employers and notice period on requirements",
+            "body": "Capture the companies your client likes to hire from and the notice period they can accept, right on the requirement form.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Import Center",
+            "body": "Bring your existing candidate database into EzRecruit yourself, with live progress, a report at the end, and the option to retry or roll back. Ask your account manager to switch it on for your company.",
+            "for": "For admins"
+          },
+          {
+            "title": "Bulk import requirements from a spreadsheet",
+            "body": "Upload a CSV of open roles instead of creating them one by one.",
+            "for": "For admins"
+          },
+          {
+            "title": "Talent Activity you can trust",
+            "body": "A clear activity drawer with full history in your own time zone, where each candidate is counted once.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Lead and collaborator at the same time",
+            "body": "A team lead can also act as a collaborator, with a simple switch for which role you're working in.",
+            "for": "For recruiters"
+          }
+        ]
+      },
+      {
+        "label": "Improved",
+        "items": [
+          {
+            "title": "Résumés read faster, and more of them",
+            "body": "Most résumés are now read in moments, and RTF files, older Word documents, text boxes and tables all come through cleanly. A damaged PDF no longer stops an upload.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "A new résumé replaces the old one everywhere",
+            "body": "When a candidate sends an updated CV, search and matching use the new one straight away.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Interview feedback that fits how you work",
+            "body": "On Hold now sits under Screened, No-show is available for interviews in progress, and rescheduled interviews no longer leave an old row behind.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Clear sign-in messages",
+            "body": "If your account can't sign in, you're told why, and accounts of people who have left the company are blocked automatically.",
+            "for": "For everyone"
+          },
+          {
+            "title": "Revenue by date of joining",
+            "body": "Quarterly revenue in Analytics now groups placements by the candidate's date of joining.",
+            "for": "For admins"
+          }
+        ]
+      },
+      {
+        "label": "Fixed",
+        "items": [
+          {
+            "title": "Certification search",
+            "body": "Typing a certification name suggests matches again.",
+            "for": "For recruiters"
+          }
+        ]
+      }
     ]
-   },
-   {
-    "label": "Improved",
-    "items": [
-     {
-      "title": "Résumés read faster, and more of them",
-      "body": "Most résumés are now read in moments, and RTF files, older Word documents, text boxes and tables all come through cleanly. A damaged PDF no longer stops an upload.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "A new résumé replaces the old one everywhere",
-      "body": "When a candidate sends an updated CV, search and matching use the new one straight away.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Interview feedback that fits how you work",
-      "body": "On Hold now sits under Screened, No-show is available for interviews in progress, and rescheduled interviews no longer leave an old row behind.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Clear sign-in messages",
-      "body": "If your account can't sign in, you're told why, and accounts of people who have left the company are blocked automatically.",
-      "for": "For everyone"
-     },
-     {
-      "title": "Revenue by date of joining",
-      "body": "Quarterly revenue in Analytics now groups placements by the candidate's date of joining.",
-      "for": "For admins"
-     }
-    ]
-   },
-   {
-    "label": "Fixed",
-    "items": [
-     {
-      "title": "Certification search",
-      "body": "Typing a certification name suggests matches again.",
-      "for": "For recruiters"
-     }
-    ]
-   }
-  ]
- },
- {
-  "slug": "2026-09-28-edition-03",
-  "date": "2026-09-28",
-  "n": "03",
-  "title": "Publish to EzRefer, cleaner emails and smarter candidate data",
-  "summary": "Your roles can now reach referrers on EzRefer, candidate emails carry the right details automatically, and bad email addresses are caught before they get in.",
-  "spotlight": {
-   "title": "Publish requirements to EzRefer",
-   "body": "Switch on Publish to EzRefer on a requirement and the role appears for referrers. Candidates who apply there flow straight back into EzRecruit.",
-   "for": "For recruiters"
   },
-  "groups": [
-   {
-    "label": "New",
-    "items": [
-     {
-      "title": "Interview emails fill themselves in",
-      "body": "The date, time and interview type come straight from the candidate's scheduled interview.",
+  {
+    "slug": "2026-09-28-edition-03",
+    "date": "2026-09-28",
+    "n": "03",
+    "title": "Publish to EzRefer, cleaner emails and smarter candidate data",
+    "summary": "Your roles can now reach referrers on EzRefer, candidate emails carry the right details automatically, and bad email addresses are caught before they get in.",
+    "spotlight": {
+      "title": "Publish requirements to EzRefer",
+      "body": "Switch on Publish to EzRefer on a requirement and the role appears for referrers. Candidates who apply there flow straight back into EzRecruit.",
       "for": "For recruiters"
-     },
-     {
-      "title": "A nudge before sending without a résumé",
-      "body": "You're asked to confirm before a candidate email goes out with no résumé attached.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "CVs download with the candidate's name",
-      "body": "No more cryptic file names in your downloads folder.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Typos in email addresses caught at entry",
-      "body": "Candidate email addresses are checked as you type, with a suggested correction for common typos like gmial.com.",
-      "for": "For recruiters"
-     }
+    },
+    "groups": [
+      {
+        "label": "New",
+        "items": [
+          {
+            "title": "Interview emails fill themselves in",
+            "body": "The date, time and interview type come straight from the candidate's scheduled interview.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "A nudge before sending without a résumé",
+            "body": "You're asked to confirm before a candidate email goes out with no résumé attached.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "CVs download with the candidate's name",
+            "body": "No more cryptic file names in your downloads folder.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Typos in email addresses caught at entry",
+            "body": "Candidate email addresses are checked as you type, with a suggested correction for common typos like gmial.com.",
+            "for": "For recruiters"
+          }
+        ]
+      },
+      {
+        "label": "Improved",
+        "items": [
+          {
+            "title": "Salary and notice period picked up from CVs",
+            "body": "Imported CVs now fill in current salary and notice period reliably.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "ROI analytics that read clearly",
+            "body": "Figures round properly, drill-downs stay responsive, and people without access see a clear notice instead of errors.",
+            "for": "For admins"
+          }
+        ]
+      },
+      {
+        "label": "Fixed",
+        "items": [
+          {
+            "title": "WhatsApp interview reminders reach candidates again",
+            "body": "Reminders are delivered, and the Confirm availability link takes candidates straight to their interview.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Client and recruiter names match everywhere",
+            "body": "Client contacts and recruiter names now show the same way on every screen, including when editing a requirement.",
+            "for": "For recruiters"
+          }
+        ]
+      }
     ]
-   },
-   {
-    "label": "Improved",
-    "items": [
-     {
-      "title": "Salary and notice period picked up from CVs",
-      "body": "Imported CVs now fill in current salary and notice period reliably.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "ROI analytics that read clearly",
-      "body": "Figures round properly, drill-downs stay responsive, and people without access see a clear notice instead of errors.",
-      "for": "For admins"
-     }
-    ]
-   },
-   {
-    "label": "Fixed",
-    "items": [
-     {
-      "title": "WhatsApp interview reminders reach candidates again",
-      "body": "Reminders are delivered, and the Confirm availability link takes candidates straight to their interview.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Client and recruiter names match everywhere",
-      "body": "Client contacts and recruiter names now show the same way on every screen, including when editing a requirement.",
-      "for": "For recruiters"
-     }
-    ]
-   }
-  ]
- },
- {
-  "slug": "2026-09-14-edition-02",
-  "date": "2026-09-14",
-  "n": "02",
-  "title": "Bulk résumé import, AI spend controls and a revamped email module",
-  "summary": "A big fortnight: whole folders of résumés in one go, full control over AI spend, a redesigned email module, and a much faster interview roster.",
-  "spotlight": {
-   "title": "Bulk résumé import",
-   "body": "Upload a batch of résumés at once and EzRecruit reads them all, instead of one file at a time.",
-   "for": "For recruiters"
   },
-  "groups": [
-   {
-    "label": "New",
-    "items": [
-     {
-      "title": "AI spend controls",
-      "body": "Set a monthly AI budget for your company, with allowances per person and per feature, and track usage on a live dashboard.",
-      "for": "For admins"
-     },
-     {
-      "title": "A redesigned email module",
-      "body": "A complete refresh of how you write, send and track candidate emails.",
-      "for": "For everyone"
-     },
-     {
-      "title": "Analytics and ROI reporting",
-      "body": "See the return on your hiring effort with a new analytics module.",
-      "for": "For admins"
-     },
-     {
-      "title": "Global Search with live progress",
-      "body": "Watch results arrive as Global Search works. Candidate search now pages through every match, picks up where it left off if your connection drops, and explains problems in plain English.",
+  {
+    "slug": "2026-09-14-edition-02",
+    "date": "2026-09-14",
+    "n": "02",
+    "title": "Bulk résumé import, AI spend controls and a revamped email module",
+    "summary": "A big fortnight: whole folders of résumés in one go, full control over AI spend, a redesigned email module, and a much faster interview roster.",
+    "spotlight": {
+      "title": "Bulk résumé import",
+      "body": "Upload a batch of résumés at once and EzRecruit reads them all, instead of one file at a time.",
       "for": "For recruiters"
-     },
-     {
-      "title": "One active sign-in per account",
-      "body": "Signing in on a new device signs out the old one, so every account belongs to one person.",
-      "for": "For admins"
-     },
-     {
-      "title": "Several collaborators at once",
-      "body": "A supervisor can now work with multiple collaborators together.",
-      "for": "For recruiters"
-     }
+    },
+    "groups": [
+      {
+        "label": "New",
+        "items": [
+          {
+            "title": "AI spend controls",
+            "body": "Set a monthly AI budget for your company, with allowances per person and per feature, and track usage on a live dashboard.",
+            "for": "For admins"
+          },
+          {
+            "title": "A redesigned email module",
+            "body": "A complete refresh of how you write, send and track candidate emails.",
+            "for": "For everyone"
+          },
+          {
+            "title": "Analytics and ROI reporting",
+            "body": "See the return on your hiring effort with a new analytics module.",
+            "for": "For admins"
+          },
+          {
+            "title": "Global Search with live progress",
+            "body": "Watch results arrive as Global Search works. Candidate search now pages through every match, picks up where it left off if your connection drops, and explains problems in plain English.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "One active sign-in per account",
+            "body": "Signing in on a new device signs out the old one, so every account belongs to one person.",
+            "for": "For admins"
+          },
+          {
+            "title": "Several collaborators at once",
+            "body": "A supervisor can now work with multiple collaborators together.",
+            "for": "For recruiters"
+          }
+        ]
+      },
+      {
+        "label": "Improved",
+        "items": [
+          {
+            "title": "A faster interview roster, with filters that work",
+            "body": "All seven roster filters now apply, columns sort, and the roster stays quick however many interviews you have.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Smarter candidate ranking",
+            "body": "Every candidate in a ranked list now gets a score, strengths and gaps, with none dropped along the way.",
+            "for": "For recruiters"
+          }
+        ]
+      },
+      {
+        "label": "Fixed",
+        "items": [
+          {
+            "title": "No more lost work after an update",
+            "body": "Tabs left open during a release keep working, so you don't lose a half-filled form.",
+            "for": "For everyone"
+          },
+          {
+            "title": "Self-booking and interview messages",
+            "body": "Candidates can book and decline interview slots reliably, and confirmations only go out once a booking succeeds.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Job description upload and paste",
+            "body": "Pasting or uploading a JD for AI parsing works again.",
+            "for": "For recruiters"
+          }
+        ]
+      }
     ]
-   },
-   {
-    "label": "Improved",
-    "items": [
-     {
-      "title": "A faster interview roster, with filters that work",
-      "body": "All seven roster filters now apply, columns sort, and the roster stays quick however many interviews you have.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Smarter candidate ranking",
-      "body": "Every candidate in a ranked list now gets a score, strengths and gaps, with none dropped along the way.",
-      "for": "For recruiters"
-     }
+  },
+  {
+    "slug": "2026-08-31-edition-01",
+    "date": "2026-08-31",
+    "n": "01",
+    "title": "Quicker candidate forms and the groundwork for Global Search",
+    "summary": "Small touches that make everyday data entry faster, and the first building blocks of Global Search.",
+    "spotlight": null,
+    "groups": [
+      {
+        "label": "New",
+        "items": [
+          {
+            "title": "Faster candidate forms",
+            "body": "Designation autocomplete puts exact matches first, documents attach more smoothly, and a new status picker and image zoom save clicks.",
+            "for": "For recruiters"
+          },
+          {
+            "title": "Global Search foundations",
+            "body": "The menu entry and permissions for Global Search arrived, ready for the full feature that followed.",
+            "for": "For admins"
+          }
+        ]
+      }
     ]
-   },
-   {
-    "label": "Fixed",
-    "items": [
-     {
-      "title": "No more lost work after an update",
-      "body": "Tabs left open during a release keep working, so you don't lose a half-filled form.",
-      "for": "For everyone"
-     },
-     {
-      "title": "Self-booking and interview messages",
-      "body": "Candidates can book and decline interview slots reliably, and confirmations only go out once a booking succeeds.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Job description upload and paste",
-      "body": "Pasting or uploading a JD for AI parsing works again.",
-      "for": "For recruiters"
-     }
-    ]
-   }
-  ]
- },
- {
-  "slug": "2026-08-31-edition-01",
-  "date": "2026-08-31",
-  "n": "01",
-  "title": "Quicker candidate forms and the groundwork for Global Search",
-  "summary": "Small touches that make everyday data entry faster, and the first building blocks of Global Search.",
-  "spotlight": null,
-  "groups": [
-   {
-    "label": "New",
-    "items": [
-     {
-      "title": "Faster candidate forms",
-      "body": "Designation autocomplete puts exact matches first, documents attach more smoothly, and a new status picker and image zoom save clicks.",
-      "for": "For recruiters"
-     },
-     {
-      "title": "Global Search foundations",
-      "body": "The menu entry and permissions for Global Search arrived, ready for the full feature that followed.",
-      "for": "For admins"
-     }
-    ]
-   }
-  ]
- }
+  }
 ]

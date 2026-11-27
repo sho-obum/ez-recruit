@@ -18,6 +18,13 @@ const COVERS: Record<string, { cover: string; title?: string }> = {
   "the-numbers-agency-owners-ask-for-every-week": { cover: "The weekly numbers" },
   "book-reschedule-and-chase-feedback-without-leaving-the-chat": { cover: "Scheduling in chat" },
   "describe-the-candidate-you-want-plain-language-search-with-nyra": { cover: "Search in plain words" },
+  "nyra-now-does-the-first-round-of-recruiting": { cover: "Nyra screens first" },
+  "how-a-candidate-experiences-nyra-screening-in-two-minutes": { cover: "Two minutes to answer" },
+  "you-stay-in-control-of-nyra-screening": { cover: "You stay in control" },
+  "from-screened-in-to-booked-how-nyra-schedules-the-first-call": { cover: "Screened in, booked" },
+  "how-nyra-eases-the-recruiting-process-step-by-step": { cover: "Every step, eased" },
+  "send-trackers-for-several-jobs-in-one-email": { cover: "One email, many jobs" },
+  "offer-candidates-up-to-seven-dates-in-one-invite": { cover: "Seven dates, one invite" },
 };
 const TONES = [
   { tone: "bg-blue text-white", ring: "border-white/25" },
