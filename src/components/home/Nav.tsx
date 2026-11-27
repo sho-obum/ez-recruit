@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Icon, { type IconName } from "../Icon";
 import NyraMark from "./NyraMark";
+import BuildStars from "./BuildStars";
 import { openNyra } from "./NyraLive";
 import { POSTS } from "./Posts";
 
@@ -54,9 +55,11 @@ function ColumnsPanel({ at, done }: PanelProps) {
 function TilesPanel({ at, done }: PanelProps) {
   return (
     <div className="grid grid-cols-[210px_1fr] gap-1.5 p-1.5">
-      <a href="/nyra/" onClick={done} className="group flex flex-col justify-between gap-8 rounded-xl bg-night p-4 text-white">
-        <NyraMark size={30} once className="text-white" />
-        <span className="flex flex-col gap-1">
+      <a href="/nyra/" onClick={done} className="group relative flex flex-col justify-between gap-8 overflow-clip rounded-xl bg-night p-4 text-white">
+        <BuildStars />
+        <span aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(50%_50%_at_50%_45%,rgba(11,11,13,0.2)_0%,rgba(11,11,13,0.75)_60%,#0b0b0d_100%)]" />
+        <NyraMark size={30} once className="relative text-white" />
+        <span className="relative flex flex-col gap-1">
           <span className="font-display text-lg leading-6 font-medium">Meet Nyra</span>
           <span className="text-[13px] leading-[18px] text-white/60">The copilot that does the work, in English, Hindi or Hinglish.</span>
           <span className="mt-2 flex items-center gap-1 text-sm font-medium text-white/90 group-hover:text-white">See what she does <Icon name="arrow" size={14} /></span>
@@ -75,7 +78,6 @@ function TilesPanel({ at, done }: PanelProps) {
 }
 
 const PAGES: Item[] = [
-  { label: "Blog", desc: "Guides for agencies", href: "/blog/", icon: "file" },
   { label: "What's new", desc: "Product updates", href: "/updates/", icon: "sparkle" },
   { label: "FAQ", desc: "Quick answers", href: "#faq", icon: "message" },
 ];
@@ -102,7 +104,7 @@ function CardsPanel({ at, done }: PanelProps) {
 const TABS: { title: string; Panel: (p: PanelProps) => React.ReactNode; drawer: Link[] }[] = [
   { title: "Product", Panel: ColumnsPanel, drawer: PRODUCT.map(i => [i.label, i.href] as Link) },
   { title: "Nyra", Panel: TilesPanel, drawer: [["Meet Nyra", "/nyra/"], ...NYRA_ITEMS.map(i => [i.label, i.href] as Link)] },
-  { title: "Resources", Panel: CardsPanel, drawer: [["Blog", "/blog/"], ["Customers", "#customers"], ["What's new", "/updates/"], ["FAQ", "#faq"]] },
+  { title: "Resources", Panel: CardsPanel, drawer: [["What's new", "/updates/"], ["FAQ", "#faq"]] },
 ];
 
 // Shifting tabs: hover a tab and one panel slides between the tabs' contents, with a pointer that follows.
@@ -135,6 +137,8 @@ function Tabs({ at, closeKey }: { at: PanelProps["at"]; closeKey: boolean }) {
           <Icon name="chevron" size={13} className={`transition-transform duration-300 ${sel === i ? "-rotate-90" : "rotate-90"}`} />
         </button>
       ))}
+      <a href="/blog/" onMouseEnter={() => pick(null)}
+        className="flex items-center rounded-full px-3.5 py-2 font-display text-sm font-medium tracking-[-0.01em] text-nav-link transition-colors duration-200 hover:text-ink">Blog</a>
 
       <AnimatePresence>
         {sel !== null && (
@@ -220,6 +224,10 @@ export default function Nav({ base = "" }: { base?: string }) {
                   )}
                 </div>
               ))}
+              <div className="flex flex-col gap-1">
+                <p className="pb-1 font-display text-[13px] font-semibold text-faint">Blog</p>
+                <a href="/blog/" onClick={() => setOpen(false)} className="text-base leading-8 font-medium text-ink">All posts</a>
+              </div>
               <a href="/demo/" className="rainbow-btn relative inline-flex h-11 w-fit items-center rounded-full px-5 font-display text-sm font-semibold text-ink md:hidden">Book a demo</a>
             </div>
           </motion.div>
