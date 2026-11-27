@@ -28,8 +28,9 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <Platform />
         <Steps />
+        <Customers />
+        <Platform />
         <Suite />
         <Nyra />
         <Tour />
@@ -37,7 +38,6 @@ export default function Home() {
         <Regions />
         <Security />
         <Stats />
-        <Customers />
         <Posts />
         <Faq />
       </main>
